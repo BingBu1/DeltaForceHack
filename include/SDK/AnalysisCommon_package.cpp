@@ -1,0 +1,191 @@
+/**
+ * Name: DeltaForceClient-Win64-Shipping
+ * Version : default
+ */ 
+#include "../SDK.h"
+
+namespace Dumper
+{
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAnalysisServiceRequest.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAnalysisServiceRequest::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x41\x6e\x61\x6c\x79\x73\x69\x73\x43\x6f\x6d\x6d\x6f\x6e\x2e\x41\x6e\x61\x6c\x79\x73\x69\x73\x53\x65\x72\x76\x69\x63\x65\x52\x65\x71\x75\x65\x73\x74");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAnalysisServiceObjRefs.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAnalysisServiceObjRefs::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x41\x6e\x61\x6c\x79\x73\x69\x73\x43\x6f\x6d\x6d\x6f\x6e\x2e\x41\x6e\x61\x6c\x79\x73\x69\x73\x53\x65\x72\x76\x69\x63\x65\x4f\x62\x6a\x52\x65\x66\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAnalysisServicePreview.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAnalysisServicePreview::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x41\x6e\x61\x6c\x79\x73\x69\x73\x43\x6f\x6d\x6d\x6f\x6e\x2e\x41\x6e\x61\x6c\x79\x73\x69\x73\x53\x65\x72\x76\x69\x63\x65\x50\x72\x65\x76\x69\x65\x77");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAnalysisServiceCapture.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAnalysisServiceCapture::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x41\x6e\x61\x6c\x79\x73\x69\x73\x43\x6f\x6d\x6d\x6f\x6e\x2e\x41\x6e\x61\x6c\x79\x73\x69\x73\x53\x65\x72\x76\x69\x63\x65\x43\x61\x70\x74\x75\x72\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAnalysisServiceUnsubscribe.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAnalysisServiceUnsubscribe::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x41\x6e\x61\x6c\x79\x73\x69\x73\x43\x6f\x6d\x6d\x6f\x6e\x2e\x41\x6e\x61\x6c\x79\x73\x69\x73\x53\x65\x72\x76\x69\x63\x65\x55\x6e\x73\x75\x62\x73\x63\x72\x69\x62\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAnalysisServiceSubscribe.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAnalysisServiceSubscribe::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x41\x6e\x61\x6c\x79\x73\x69\x73\x43\x6f\x6d\x6d\x6f\x6e\x2e\x41\x6e\x61\x6c\x79\x73\x69\x73\x53\x65\x72\x76\x69\x63\x65\x53\x75\x62\x73\x63\x72\x69\x62\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAnalysisServiceClearAllData.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAnalysisServiceClearAllData::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x41\x6e\x61\x6c\x79\x73\x69\x73\x43\x6f\x6d\x6d\x6f\x6e\x2e\x41\x6e\x61\x6c\x79\x73\x69\x73\x53\x65\x72\x76\x69\x63\x65\x43\x6c\x65\x61\x72\x41\x6c\x6c\x44\x61\x74\x61");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAnalysisServicePong.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAnalysisServicePong::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x41\x6e\x61\x6c\x79\x73\x69\x73\x43\x6f\x6d\x6d\x6f\x6e\x2e\x41\x6e\x61\x6c\x79\x73\x69\x73\x53\x65\x72\x76\x69\x63\x65\x50\x6f\x6e\x67");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAnalysisServicePing.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAnalysisServicePing::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x41\x6e\x61\x6c\x79\x73\x69\x73\x43\x6f\x6d\x6d\x6f\x6e\x2e\x41\x6e\x61\x6c\x79\x73\x69\x73\x53\x65\x72\x76\x69\x63\x65\x50\x69\x6e\x67");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAnalysisServiceFileChunk.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAnalysisServiceFileChunk::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x41\x6e\x61\x6c\x79\x73\x69\x73\x43\x6f\x6d\x6d\x6f\x6e\x2e\x41\x6e\x61\x6c\x79\x73\x69\x73\x53\x65\x72\x76\x69\x63\x65\x46\x69\x6c\x65\x43\x68\x75\x6e\x6b");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAnalysisServicePreviewAck.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAnalysisServicePreviewAck::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x41\x6e\x61\x6c\x79\x73\x69\x73\x43\x6f\x6d\x6d\x6f\x6e\x2e\x41\x6e\x61\x6c\x79\x73\x69\x73\x53\x65\x72\x76\x69\x63\x65\x50\x72\x65\x76\x69\x65\x77\x41\x63\x6b");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAnalysisServiceData2.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAnalysisServiceData2::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x41\x6e\x61\x6c\x79\x73\x69\x73\x43\x6f\x6d\x6d\x6f\x6e\x2e\x41\x6e\x61\x6c\x79\x73\x69\x73\x53\x65\x72\x76\x69\x63\x65\x44\x61\x74\x61\x32");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAnalysisServiceAuthorize.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAnalysisServiceAuthorize::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x41\x6e\x61\x6c\x79\x73\x69\x73\x43\x6f\x6d\x6d\x6f\x6e\x2e\x41\x6e\x61\x6c\x79\x73\x69\x73\x53\x65\x72\x76\x69\x63\x65\x41\x75\x74\x68\x6f\x72\x69\x7a\x65");
+		return ptr;
+	}
+
+}

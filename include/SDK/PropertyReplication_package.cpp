@@ -1,0 +1,314 @@
+/**
+ * Name: DeltaForceClient-Win64-Shipping
+ * Version : default
+ */ 
+#include "../SDK.h"
+
+namespace Dumper
+{
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FScriptStructArray.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FScriptStructArray::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x41\x72\x72\x61\x79");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FPropertyReplicationPendingNakInfo.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FPropertyReplicationPendingNakInfo::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x50\x65\x6e\x64\x69\x6e\x67\x4e\x61\x6b\x49\x6e\x66\x6f");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FPropertyReplicationContainer.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FPropertyReplicationContainer::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x43\x6f\x6e\x74\x61\x69\x6e\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FNetGuid.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FNetGuid::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x4e\x65\x74\x47\x75\x69\x64");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FPropertyReplicationHandler.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FPropertyReplicationHandler::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x48\x61\x6e\x64\x6c\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FPropertyReplicationBaseItem.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FPropertyReplicationBaseItem::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x42\x61\x73\x65\x49\x74\x65\x6d");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FReplicationFrameNumber.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FReplicationFrameNumber::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x46\x72\x61\x6d\x65\x4e\x75\x6d\x62\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FPropertyReplicationItem.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FPropertyReplicationItem::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x49\x74\x65\x6d");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FReplicationFrameNumberRange.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FReplicationFrameNumberRange::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x46\x72\x61\x6d\x65\x4e\x75\x6d\x62\x65\x72\x52\x61\x6e\x67\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FPropertyReplicationTest.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FPropertyReplicationTest::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x54\x65\x73\x74");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UPropertyReplicationPackageMapClient.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UPropertyReplicationPackageMapClient::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x50\x61\x63\x6b\x61\x67\x65\x4d\x61\x70\x43\x6c\x69\x65\x6e\x74");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UPropertyReplicationSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UPropertyReplicationSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UPropertyReplicationSubsystem.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UPropertyReplicationSubsystem::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x53\x75\x62\x73\x79\x73\x74\x65\x6d");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction APropertyReplicationActor.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* APropertyReplicationActor::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x41\x63\x74\x6f\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UPropertyReplicationComponent.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UPropertyReplicationComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UPropertyReplicationConnection.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UPropertyReplicationConnection::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x43\x6f\x6e\x6e\x65\x63\x74\x69\x6f\x6e");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UPropertyReplicationTestObject.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UPropertyReplicationTestObject::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x54\x65\x73\x74\x4f\x62\x6a\x65\x63\x74");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction APropertyReplicationTestActor.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* APropertyReplicationTestActor::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x54\x65\x73\x74\x41\x63\x74\x6f\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UPropertyReplicationInterface.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UPropertyReplicationInterface::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x49\x6e\x74\x65\x72\x66\x61\x63\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0XC0000000
+	 * 	Name: Function PropertyReplication.PropertyReplicationComponent.OnRep_Container
+	 * 	Flags: (Final, Native, Public)
+	 */
+	void UPropertyReplicationComponent::OnRep_Container()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("\x46\x75\x6e\x63\x74\x69\x6f\x6e\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74\x2e\x4f\x6e\x52\x65\x70\x5f\x43\x6f\x6e\x74\x61\x69\x6e\x65\x72");
+		Function_PropertyReplication_PropertyReplicationComponent_OnRep_Container_Param params { };
+
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+
+	}
+	/**
+	 * Function: 
+	 * 	RVA: 0XC0000000
+	 * 	Name: Function PropertyReplication.PropertyReplicationTestObject.MulticasUnreliable
+	 * 	Flags: (Net, NetReliable, Native, Event, NetMulticast, Public)
+	 */
+	void UPropertyReplicationTestObject::MulticasUnreliable(int32_t I)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("\x46\x75\x6e\x63\x74\x69\x6f\x6e\x20\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2e\x50\x72\x6f\x70\x65\x72\x74\x79\x52\x65\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x54\x65\x73\x74\x4f\x62\x6a\x65\x63\x74\x2e\x4d\x75\x6c\x74\x69\x63\x61\x73\x55\x6e\x72\x65\x6c\x69\x61\x62\x6c\x65");
+		Function_PropertyReplication_PropertyReplicationTestObject_MulticasUnreliable_Param params { };
+		params.I = I;
+
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+
+	}
+}

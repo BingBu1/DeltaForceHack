@@ -1,0 +1,25 @@
+/**
+ * Name: DeltaForceClient-Win64-Shipping
+ * Version : default
+ */ 
+#pragma once
+
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x01)
+#endif
+
+
+namespace Dumper
+{
+	struct Function_SlateCore_ReplyHelper_Unhandled_Param
+	{
+	public:
+
+		struct FReply ReturnValue; // 0x00(0xd0)
+	};
+
+}
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif

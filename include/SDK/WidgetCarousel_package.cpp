@@ -1,0 +1,37 @@
+/**
+ * Name: DeltaForceClient-Win64-Shipping
+ * Version : default
+ */ 
+#include "../SDK.h"
+
+namespace Dumper
+{
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FWidgetCarouselNavigationBarStyle.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FWidgetCarouselNavigationBarStyle::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x57\x69\x64\x67\x65\x74\x43\x61\x72\x6f\x75\x73\x65\x6c\x2e\x57\x69\x64\x67\x65\x74\x43\x61\x72\x6f\x75\x73\x65\x6c\x4e\x61\x76\x69\x67\x61\x74\x69\x6f\x6e\x42\x61\x72\x53\x74\x79\x6c\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FWidgetCarouselNavigationButtonStyle.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FWidgetCarouselNavigationButtonStyle::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x57\x69\x64\x67\x65\x74\x43\x61\x72\x6f\x75\x73\x65\x6c\x2e\x57\x69\x64\x67\x65\x74\x43\x61\x72\x6f\x75\x73\x65\x6c\x4e\x61\x76\x69\x67\x61\x74\x69\x6f\x6e\x42\x75\x74\x74\x6f\x6e\x53\x74\x79\x6c\x65");
+		return ptr;
+	}
+
+}

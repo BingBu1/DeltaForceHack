@@ -1,0 +1,51 @@
+/**
+ * Name: DeltaForceClient-Win64-Shipping
+ * Version : default
+ */ 
+#include "../SDK.h"
+
+namespace Dumper
+{
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UABP_Hero_Face_UI_C.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UABP_Hero_Face_UI_C::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x41\x6e\x69\x6d\x42\x6c\x75\x65\x70\x72\x69\x6e\x74\x47\x65\x6e\x65\x72\x61\x74\x65\x64\x43\x6c\x61\x73\x73\x20\x41\x42\x50\x5f\x48\x65\x72\x6f\x5f\x46\x61\x63\x65\x5f\x55\x49\x2e\x41\x42\x50\x5f\x48\x65\x72\x6f\x5f\x46\x61\x63\x65\x5f\x55\x49\x5f\x43");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0XC0000044
+	 * 	Name: Function ABP_Hero_Face_UI.ABP_Hero_Face_UI_C.SyncFaceAnim
+	 * 	Flags: (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+	 */
+	void UABP_Hero_Face_UI_C::SyncFaceAnim(struct UAnimSequenceBase* BodyAnim, struct UAnimSequenceBase* FaceAnim, bool IsResetPlay, bool SetOrGet, struct UAnimSequenceBase*& GetBodyAnim, struct UAnimSequenceBase*& GetFaceAnim, bool& GetIsResetPlay)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("\x46\x75\x6e\x63\x74\x69\x6f\x6e\x20\x41\x42\x50\x5f\x48\x65\x72\x6f\x5f\x46\x61\x63\x65\x5f\x55\x49\x2e\x41\x42\x50\x5f\x48\x65\x72\x6f\x5f\x46\x61\x63\x65\x5f\x55\x49\x5f\x43\x2e\x53\x79\x6e\x63\x46\x61\x63\x65\x41\x6e\x69\x6d");
+		Function_ABP_Hero_Face_UI_ABP_Hero_Face_UI_C_SyncFaceAnim_Param params { };
+		params.BodyAnim = BodyAnim;
+		params.FaceAnim = FaceAnim;
+		params.IsResetPlay = IsResetPlay;
+		params.SetOrGet = SetOrGet;
+		params.GetBodyAnim = GetBodyAnim;
+		params.GetFaceAnim = GetFaceAnim;
+		params.GetIsResetPlay = GetIsResetPlay;
+
+		auto flags = fn->FunctionFlags;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+
+		GetBodyAnim = params.GetBodyAnim;
+		GetFaceAnim = params.GetFaceAnim;
+		GetIsResetPlay = params.GetIsResetPlay;
+	}
+}

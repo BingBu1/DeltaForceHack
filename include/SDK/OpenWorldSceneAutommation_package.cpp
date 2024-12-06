@@ -1,0 +1,135 @@
+/**
+ * Name: DeltaForceClient-Win64-Shipping
+ * Version : default
+ */ 
+#include "../SDK.h"
+
+namespace Dumper
+{
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FOpenWorldSceneAutomationPosition.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FOpenWorldSceneAutomationPosition::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x53\x63\x65\x6e\x65\x41\x75\x74\x6f\x6d\x6d\x61\x74\x69\x6f\x6e\x2e\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x53\x63\x65\x6e\x65\x41\x75\x74\x6f\x6d\x61\x74\x69\x6f\x6e\x50\x6f\x73\x69\x74\x69\x6f\x6e");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAutomationFlowPath.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAutomationFlowPath::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x53\x63\x65\x6e\x65\x41\x75\x74\x6f\x6d\x6d\x61\x74\x69\x6f\x6e\x2e\x41\x75\x74\x6f\x6d\x61\x74\x69\x6f\x6e\x46\x6c\x6f\x77\x50\x61\x74\x68");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FOpenWorldSceneAutomationFlowRuntimeSection.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FOpenWorldSceneAutomationFlowRuntimeSection::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x53\x63\x65\x6e\x65\x41\x75\x74\x6f\x6d\x6d\x61\x74\x69\x6f\x6e\x2e\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x53\x63\x65\x6e\x65\x41\x75\x74\x6f\x6d\x61\x74\x69\x6f\x6e\x46\x6c\x6f\x77\x52\x75\x6e\x74\x69\x6d\x65\x53\x65\x63\x74\x69\x6f\x6e");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UOpenWorldSceneAutommationFlowComponent.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UOpenWorldSceneAutommationFlowComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x53\x63\x65\x6e\x65\x41\x75\x74\x6f\x6d\x6d\x61\x74\x69\x6f\x6e\x2e\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x53\x63\x65\x6e\x65\x41\x75\x74\x6f\x6d\x6d\x61\x74\x69\x6f\x6e\x46\x6c\x6f\x77\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction AOpenWorldSceneAutommationFlow.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* AOpenWorldSceneAutommationFlow::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x53\x63\x65\x6e\x65\x41\x75\x74\x6f\x6d\x6d\x61\x74\x69\x6f\x6e\x2e\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x53\x63\x65\x6e\x65\x41\x75\x74\x6f\x6d\x6d\x61\x74\x69\x6f\x6e\x46\x6c\x6f\x77");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UOpenWorldSceneAutommationMethod.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UOpenWorldSceneAutommationMethod::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x53\x63\x65\x6e\x65\x41\x75\x74\x6f\x6d\x6d\x61\x74\x69\x6f\x6e\x2e\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x53\x63\x65\x6e\x65\x41\x75\x74\x6f\x6d\x6d\x61\x74\x69\x6f\x6e\x4d\x65\x74\x68\x6f\x64");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0XC0000000
+	 * 	Name: Function OpenWorldSceneAutommation.OpenWorldSceneAutommationFlow.InitAutomationData
+	 * 	Flags: (Final, Native, Public, BlueprintCallable)
+	 */
+	void AOpenWorldSceneAutommationFlow::InitAutomationData()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("\x46\x75\x6e\x63\x74\x69\x6f\x6e\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x53\x63\x65\x6e\x65\x41\x75\x74\x6f\x6d\x6d\x61\x74\x69\x6f\x6e\x2e\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x53\x63\x65\x6e\x65\x41\x75\x74\x6f\x6d\x6d\x61\x74\x69\x6f\x6e\x46\x6c\x6f\x77\x2e\x49\x6e\x69\x74\x41\x75\x74\x6f\x6d\x61\x74\x69\x6f\x6e\x44\x61\x74\x61");
+		Function_OpenWorldSceneAutommation_OpenWorldSceneAutommationFlow_InitAutomationData_Param params { };
+
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+
+	}
+	/**
+	 * Function: 
+	 * 	RVA: 0XC0000000
+	 * 	Name: Function OpenWorldSceneAutommation.OpenWorldSceneAutommationMethod.UpdatePlayerLocaiton
+	 * 	Flags: (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+	 */
+	void UOpenWorldSceneAutommationMethod::UpdatePlayerLocaiton(struct FVector& InPlayerLocation, struct FRotator& InPlayerRotator)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("\x46\x75\x6e\x63\x74\x69\x6f\x6e\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x53\x63\x65\x6e\x65\x41\x75\x74\x6f\x6d\x6d\x61\x74\x69\x6f\x6e\x2e\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x53\x63\x65\x6e\x65\x41\x75\x74\x6f\x6d\x6d\x61\x74\x69\x6f\x6e\x4d\x65\x74\x68\x6f\x64\x2e\x55\x70\x64\x61\x74\x65\x50\x6c\x61\x79\x65\x72\x4c\x6f\x63\x61\x69\x74\x6f\x6e");
+		Function_OpenWorldSceneAutommation_OpenWorldSceneAutommationMethod_UpdatePlayerLocaiton_Param params { };
+		params.InPlayerLocation = InPlayerLocation;
+		params.InPlayerRotator = InPlayerRotator;
+
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+
+		InPlayerLocation = params.InPlayerLocation;
+		InPlayerRotator = params.InPlayerRotator;
+	}
+}

@@ -1,0 +1,183 @@
+/**
+ * Name: DeltaForceClient-Win64-Shipping
+ * Version : default
+ */ 
+#include "../SDK.h"
+
+namespace Dumper
+{
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FClothParameterMask_PhysMesh.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FClothParameterMask_PhysMesh::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x43\x6c\x6f\x74\x68\x69\x6e\x67\x53\x79\x73\x74\x65\x6d\x52\x75\x6e\x74\x69\x6d\x65\x4e\x76\x2e\x43\x6c\x6f\x74\x68\x50\x61\x72\x61\x6d\x65\x74\x65\x72\x4d\x61\x73\x6b\x5f\x50\x68\x79\x73\x4d\x65\x73\x68");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FClothConstraintSetup.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FClothConstraintSetup::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x43\x6c\x6f\x74\x68\x69\x6e\x67\x53\x79\x73\x74\x65\x6d\x52\x75\x6e\x74\x69\x6d\x65\x4e\x76\x2e\x43\x6c\x6f\x74\x68\x43\x6f\x6e\x73\x74\x72\x61\x69\x6e\x74\x53\x65\x74\x75\x70");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FClothPhysicalMeshData.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FClothPhysicalMeshData::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x43\x6c\x6f\x74\x68\x69\x6e\x67\x53\x79\x73\x74\x65\x6d\x52\x75\x6e\x74\x69\x6d\x65\x4e\x76\x2e\x43\x6c\x6f\x74\x68\x50\x68\x79\x73\x69\x63\x61\x6c\x4d\x65\x73\x68\x44\x61\x74\x61");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FClothConfig.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FClothConfig::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x43\x6c\x6f\x74\x68\x69\x6e\x67\x53\x79\x73\x74\x65\x6d\x52\x75\x6e\x74\x69\x6d\x65\x4e\x76\x2e\x43\x6c\x6f\x74\x68\x43\x6f\x6e\x66\x69\x67");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FClothLODData.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FClothLODData::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x43\x6c\x6f\x74\x68\x69\x6e\x67\x53\x79\x73\x74\x65\x6d\x52\x75\x6e\x74\x69\x6d\x65\x4e\x76\x2e\x43\x6c\x6f\x74\x68\x4c\x4f\x44\x44\x61\x74\x61");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UClothConfigNv.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UClothConfigNv::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x43\x6c\x6f\x74\x68\x69\x6e\x67\x53\x79\x73\x74\x65\x6d\x52\x75\x6e\x74\x69\x6d\x65\x4e\x76\x2e\x43\x6c\x6f\x74\x68\x43\x6f\x6e\x66\x69\x67\x4e\x76");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UClothingAssetNv.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UClothingAssetNv::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x43\x6c\x6f\x74\x68\x69\x6e\x67\x53\x79\x73\x74\x65\x6d\x52\x75\x6e\x74\x69\x6d\x65\x4e\x76\x2e\x43\x6c\x6f\x74\x68\x69\x6e\x67\x41\x73\x73\x65\x74\x4e\x76");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UClothingSimulationFactoryNv.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UClothingSimulationFactoryNv::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x43\x6c\x6f\x74\x68\x69\x6e\x67\x53\x79\x73\x74\x65\x6d\x52\x75\x6e\x74\x69\x6d\x65\x4e\x76\x2e\x43\x6c\x6f\x74\x68\x69\x6e\x67\x53\x69\x6d\x75\x6c\x61\x74\x69\x6f\x6e\x46\x61\x63\x74\x6f\x72\x79\x4e\x76");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UClothingSimulationInteractorNv.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UClothingSimulationInteractorNv::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x43\x6c\x6f\x74\x68\x69\x6e\x67\x53\x79\x73\x74\x65\x6d\x52\x75\x6e\x74\x69\x6d\x65\x4e\x76\x2e\x43\x6c\x6f\x74\x68\x69\x6e\x67\x53\x69\x6d\x75\x6c\x61\x74\x69\x6f\x6e\x49\x6e\x74\x65\x72\x61\x63\x74\x6f\x72\x4e\x76");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UClothLODDataNv.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UClothLODDataNv::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x43\x6c\x6f\x74\x68\x69\x6e\x67\x53\x79\x73\x74\x65\x6d\x52\x75\x6e\x74\x69\x6d\x65\x4e\x76\x2e\x43\x6c\x6f\x74\x68\x4c\x4f\x44\x44\x61\x74\x61\x4e\x76");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UClothPhysicalMeshDataNv.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UClothPhysicalMeshDataNv::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x43\x6c\x6f\x74\x68\x69\x6e\x67\x53\x79\x73\x74\x65\x6d\x52\x75\x6e\x74\x69\x6d\x65\x4e\x76\x2e\x43\x6c\x6f\x74\x68\x50\x68\x79\x73\x69\x63\x61\x6c\x4d\x65\x73\x68\x44\x61\x74\x61\x4e\x76");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0XC0000000
+	 * 	Name: Function ClothingSystemRuntimeNv.ClothingSimulationInteractorNv.SetAnimDriveSpringStiffness
+	 * 	Flags: (Final, Native, Public, BlueprintCallable)
+	 */
+	void UClothingSimulationInteractorNv::SetAnimDriveSpringStiffness(float InStiffness)
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("\x46\x75\x6e\x63\x74\x69\x6f\x6e\x20\x43\x6c\x6f\x74\x68\x69\x6e\x67\x53\x79\x73\x74\x65\x6d\x52\x75\x6e\x74\x69\x6d\x65\x4e\x76\x2e\x43\x6c\x6f\x74\x68\x69\x6e\x67\x53\x69\x6d\x75\x6c\x61\x74\x69\x6f\x6e\x49\x6e\x74\x65\x72\x61\x63\x74\x6f\x72\x4e\x76\x2e\x53\x65\x74\x41\x6e\x69\x6d\x44\x72\x69\x76\x65\x53\x70\x72\x69\x6e\x67\x53\x74\x69\x66\x66\x6e\x65\x73\x73");
+		Function_ClothingSystemRuntimeNv_ClothingSimulationInteractorNv_SetAnimDriveSpringStiffness_Param params { };
+		params.InStiffness = InStiffness;
+
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+
+	}
+}

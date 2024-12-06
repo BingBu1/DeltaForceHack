@@ -1,0 +1,1003 @@
+/**
+ * Name: DeltaForceClient-Win64-Shipping
+ * Version : default
+ */ 
+#include "../SDK.h"
+
+namespace Dumper
+{
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FOutputMaterialSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FOutputMaterialSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x4f\x75\x74\x70\x75\x74\x4d\x61\x74\x65\x72\x69\x61\x6c\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FInputMaterialSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FInputMaterialSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x49\x6e\x70\x75\x74\x4d\x61\x74\x65\x72\x69\x61\x6c\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FComputeCasterSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FComputeCasterSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x43\x6f\x6d\x70\x75\x74\x65\x43\x61\x73\x74\x65\x72\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FVertexColorCasterSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FVertexColorCasterSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x56\x65\x72\x74\x65\x78\x43\x6f\x6c\x6f\x72\x43\x61\x73\x74\x65\x72\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FGeometryDataCasterSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FGeometryDataCasterSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x47\x65\x6f\x6d\x65\x74\x72\x79\x44\x61\x74\x61\x43\x61\x73\x74\x65\x72\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAmbientOcclusionCasterSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAmbientOcclusionCasterSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x41\x6d\x62\x69\x65\x6e\x74\x4f\x63\x63\x6c\x75\x73\x69\x6f\x6e\x43\x61\x73\x74\x65\x72\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FDisplacementCasterSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FDisplacementCasterSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x44\x69\x73\x70\x6c\x61\x63\x65\x6d\x65\x6e\x74\x43\x61\x73\x74\x65\x72\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FOpacityCasterSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FOpacityCasterSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x4f\x70\x61\x63\x69\x74\x79\x43\x61\x73\x74\x65\x72\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FSimplygonPipelineSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FSimplygonPipelineSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x50\x69\x70\x65\x6c\x69\x6e\x65\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FHighDensityMeshReductionSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FHighDensityMeshReductionSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x48\x69\x67\x68\x44\x65\x6e\x73\x69\x74\x79\x4d\x65\x73\x68\x52\x65\x64\x75\x63\x74\x69\x6f\x6e\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FParameterizerSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FParameterizerSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x50\x61\x72\x61\x6d\x65\x74\x65\x72\x69\x7a\x65\x72\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FChartAggregatorSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FChartAggregatorSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x43\x68\x61\x72\x74\x41\x67\x67\x72\x65\x67\x61\x74\x6f\x72\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAttributeTessellationSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAttributeTessellationSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x41\x74\x74\x72\x69\x62\x75\x74\x65\x54\x65\x73\x73\x65\x6c\x6c\x61\x74\x69\x6f\x6e\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FImpostorFromSingleViewSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FImpostorFromSingleViewSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x49\x6d\x70\x6f\x73\x74\x6f\x72\x46\x72\x6f\x6d\x53\x69\x6e\x67\x6c\x65\x56\x69\x65\x77\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FFlipbookSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FFlipbookSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x46\x6c\x69\x70\x62\x6f\x6f\x6b\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FFoliageSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FFoliageSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x46\x6f\x6c\x69\x61\x67\x65\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FGenerateLightmapTexCoordSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FGenerateLightmapTexCoordSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x47\x65\x6e\x65\x72\x61\x74\x65\x4c\x69\x67\x68\x74\x6d\x61\x70\x54\x65\x78\x43\x6f\x6f\x72\x64\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FVertexWeightSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FVertexWeightSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x56\x65\x72\x74\x65\x78\x57\x65\x69\x67\x68\x74\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FGeometryCullingSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FGeometryCullingSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x47\x65\x6f\x6d\x65\x74\x72\x79\x43\x75\x6c\x6c\x69\x6e\x67\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FVisibilitySettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FVisibilitySettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x56\x69\x73\x69\x62\x69\x6c\x69\x74\x79\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAggregationSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAggregationSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x41\x67\x67\x72\x65\x67\x61\x74\x69\x6f\x6e\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FBoneSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FBoneSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x42\x6f\x6e\x65\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FRemeshingSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FRemeshingSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x52\x65\x6d\x65\x73\x68\x69\x6e\x67\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FNormalCasterSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FNormalCasterSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x4e\x6f\x72\x6d\x61\x6c\x43\x61\x73\x74\x65\x72\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FColorCasterSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FColorCasterSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x43\x6f\x6c\x6f\x72\x43\x61\x73\x74\x65\x72\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FNormalCalculationSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FNormalCalculationSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x4e\x6f\x72\x6d\x61\x6c\x43\x61\x6c\x63\x75\x6c\x61\x74\x69\x6f\x6e\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FRepairSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FRepairSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x52\x65\x70\x61\x69\x72\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FReductionSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FReductionSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x52\x65\x64\x75\x63\x74\x69\x6f\x6e\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FHighDensityMeshReductionPipelineSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FHighDensityMeshReductionPipelineSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x48\x69\x67\x68\x44\x65\x6e\x73\x69\x74\x79\x4d\x65\x73\x68\x52\x65\x64\x75\x63\x74\x69\x6f\x6e\x50\x69\x70\x65\x6c\x69\x6e\x65\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FMappingImageSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FMappingImageSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x4d\x61\x70\x70\x69\x6e\x67\x49\x6d\x61\x67\x65\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FRawMappingImageSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FRawMappingImageSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x52\x61\x77\x4d\x61\x70\x70\x69\x6e\x67\x49\x6d\x61\x67\x65\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FBillboardCloudSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FBillboardCloudSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x42\x69\x6c\x6c\x62\x6f\x61\x72\x64\x43\x6c\x6f\x75\x64\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FNormalCasterSettingsWrapper.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FNormalCasterSettingsWrapper::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x4e\x6f\x72\x6d\x61\x6c\x43\x61\x73\x74\x65\x72\x53\x65\x74\x74\x69\x6e\x67\x73\x57\x72\x61\x70\x70\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FBaseColorCasterSettingsWrapper.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FBaseColorCasterSettingsWrapper::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x42\x61\x73\x65\x43\x6f\x6c\x6f\x72\x43\x61\x73\x74\x65\x72\x53\x65\x74\x74\x69\x6e\x67\x73\x57\x72\x61\x70\x70\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FImpostorFromSingleViewPipelineSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FImpostorFromSingleViewPipelineSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x49\x6d\x70\x6f\x73\x74\x6f\x72\x46\x72\x6f\x6d\x53\x69\x6e\x67\x6c\x65\x56\x69\x65\x77\x50\x69\x70\x65\x6c\x69\x6e\x65\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FFlipbookPipelineSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FFlipbookPipelineSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x46\x6c\x69\x70\x62\x6f\x6f\x6b\x50\x69\x70\x65\x6c\x69\x6e\x65\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FAggregationPipelineSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FAggregationPipelineSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x41\x67\x67\x72\x65\x67\x61\x74\x69\x6f\x6e\x50\x69\x70\x65\x6c\x69\x6e\x65\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FRemeshingPipelineSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FRemeshingPipelineSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x52\x65\x6d\x65\x73\x68\x69\x6e\x67\x50\x69\x70\x65\x6c\x69\x6e\x65\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FReductionPipelineSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FReductionPipelineSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x52\x65\x64\x75\x63\x74\x69\x6f\x6e\x50\x69\x70\x65\x6c\x69\x6e\x65\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FBillboardCloudVegetationPipelineSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FBillboardCloudVegetationPipelineSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x42\x69\x6c\x6c\x62\x6f\x61\x72\x64\x43\x6c\x6f\x75\x64\x56\x65\x67\x65\x74\x61\x74\x69\x6f\x6e\x50\x69\x70\x65\x6c\x69\x6e\x65\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FBillboardCloudPipelineSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FBillboardCloudPipelineSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x42\x69\x6c\x6c\x62\x6f\x61\x72\x64\x43\x6c\x6f\x75\x64\x50\x69\x70\x65\x6c\x69\x6e\x65\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FRawRemeshingPipelineSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FRawRemeshingPipelineSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x52\x61\x77\x52\x65\x6d\x65\x73\x68\x69\x6e\x67\x50\x69\x70\x65\x6c\x69\x6e\x65\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction USimplygonStandinPipeline.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* USimplygonStandinPipeline::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x53\x74\x61\x6e\x64\x69\x6e\x50\x69\x70\x65\x6c\x69\x6e\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction USimplygonPipeline.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* USimplygonPipeline::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x50\x69\x70\x65\x6c\x69\x6e\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction USimplygonMaterialCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* USimplygonMaterialCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x4d\x61\x74\x65\x72\x69\x61\x6c\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UStandinNearPipeline.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UStandinNearPipeline::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x53\x74\x61\x6e\x64\x69\x6e\x4e\x65\x61\x72\x50\x69\x70\x65\x6c\x69\x6e\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UStandinFarPipeline.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UStandinFarPipeline::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x53\x74\x61\x6e\x64\x69\x6e\x46\x61\x72\x50\x69\x70\x65\x6c\x69\x6e\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UBillboardCloudPipeline.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UBillboardCloudPipeline::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x42\x69\x6c\x6c\x62\x6f\x61\x72\x64\x43\x6c\x6f\x75\x64\x50\x69\x70\x65\x6c\x69\x6e\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UFlipbookPipeline.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UFlipbookPipeline::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x46\x6c\x69\x70\x62\x6f\x6f\x6b\x50\x69\x70\x65\x6c\x69\x6e\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UBillboardCloudVegetationPipeline.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UBillboardCloudVegetationPipeline::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x42\x69\x6c\x6c\x62\x6f\x61\x72\x64\x43\x6c\x6f\x75\x64\x56\x65\x67\x65\x74\x61\x74\x69\x6f\x6e\x50\x69\x70\x65\x6c\x69\x6e\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction URemeshingPipeline.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* URemeshingPipeline::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x52\x65\x6d\x65\x73\x68\x69\x6e\x67\x50\x69\x70\x65\x6c\x69\x6e\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UHighDensityMeshReductionPipeline.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UHighDensityMeshReductionPipeline::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x48\x69\x67\x68\x44\x65\x6e\x73\x69\x74\x79\x4d\x65\x73\x68\x52\x65\x64\x75\x63\x74\x69\x6f\x6e\x50\x69\x70\x65\x6c\x69\x6e\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UReductionPipeline.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UReductionPipeline::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x52\x65\x64\x75\x63\x74\x69\x6f\x6e\x50\x69\x70\x65\x6c\x69\x6e\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UAggregationPipeline.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UAggregationPipeline::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x41\x67\x67\x72\x65\x67\x61\x74\x69\x6f\x6e\x50\x69\x70\x65\x6c\x69\x6e\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction USimplygonColorCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* USimplygonColorCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x43\x6f\x6c\x6f\x72\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction USimplygonNormalCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* USimplygonNormalCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x4e\x6f\x72\x6d\x61\x6c\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction USimplygonOpacityCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* USimplygonOpacityCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x4f\x70\x61\x63\x69\x74\x79\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction USimplygonDisplacementCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* USimplygonDisplacementCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x44\x69\x73\x70\x6c\x61\x63\x65\x6d\x65\x6e\x74\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction USimplygonAmbientOcclusionCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* USimplygonAmbientOcclusionCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x41\x6d\x62\x69\x65\x6e\x74\x4f\x63\x63\x6c\x75\x73\x69\x6f\x6e\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction USimplygonGeometryDataCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* USimplygonGeometryDataCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x47\x65\x6f\x6d\x65\x74\x72\x79\x44\x61\x74\x61\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction USimplygonVertexColorCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* USimplygonVertexColorCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x56\x65\x72\x74\x65\x78\x43\x6f\x6c\x6f\x72\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction USimplygonComputeCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* USimplygonComputeCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x43\x6f\x6d\x70\x75\x74\x65\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UBaseColorCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UBaseColorCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x42\x61\x73\x65\x43\x6f\x6c\x6f\x72\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UNormalCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UNormalCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x4e\x6f\x72\x6d\x61\x6c\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UOpacityCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UOpacityCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x4f\x70\x61\x63\x69\x74\x79\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UOpacityMaskCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UOpacityMaskCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x4f\x70\x61\x63\x69\x74\x79\x4d\x61\x73\x6b\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UMetallicCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UMetallicCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x4d\x65\x74\x61\x6c\x6c\x69\x63\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction USpecualarCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* USpecualarCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x53\x70\x65\x63\x75\x61\x6c\x61\x72\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction URoughnessCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* URoughnessCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x52\x6f\x75\x67\x68\x6e\x65\x73\x73\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UEmissiveCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UEmissiveCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x45\x6d\x69\x73\x73\x69\x76\x65\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UAmbientOcclusionMaskCaster.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UAmbientOcclusionMaskCaster::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x53\x69\x6d\x70\x6c\x79\x67\x6f\x6e\x55\x4f\x62\x6a\x65\x63\x74\x73\x2e\x41\x6d\x62\x69\x65\x6e\x74\x4f\x63\x63\x6c\x75\x73\x69\x6f\x6e\x4d\x61\x73\x6b\x43\x61\x73\x74\x65\x72");
+		return ptr;
+	}
+
+}

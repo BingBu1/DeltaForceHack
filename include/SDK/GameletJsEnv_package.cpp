@@ -1,0 +1,252 @@
+/**
+ * Name: DeltaForceClient-Win64-Shipping
+ * Version : default
+ */ 
+#include "../SDK.h"
+
+namespace Dumper
+{
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FGameletPropertyMetaRoot.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FGameletPropertyMetaRoot::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x47\x61\x6d\x65\x6c\x65\x74\x50\x72\x6f\x70\x65\x72\x74\x79\x4d\x65\x74\x61\x52\x6f\x6f\x74");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FGameletArrayBuffer.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FGameletArrayBuffer::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x47\x61\x6d\x65\x6c\x65\x74\x41\x72\x72\x61\x79\x42\x75\x66\x66\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FGameletJsObject.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FGameletJsObject::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x4f\x62\x6a\x65\x63\x74");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UGameletDynamicDelegateProxy.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UGameletDynamicDelegateProxy::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x47\x61\x6d\x65\x6c\x65\x74\x44\x79\x6e\x61\x6d\x69\x63\x44\x65\x6c\x65\x67\x61\x74\x65\x50\x72\x6f\x78\x79");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UGameletExtensionMethods.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UGameletExtensionMethods::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x47\x61\x6d\x65\x6c\x65\x74\x45\x78\x74\x65\x6e\x73\x69\x6f\x6e\x4d\x65\x74\x68\x6f\x64\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UGameletJSAnimGeneratedClass.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UGameletJSAnimGeneratedClass::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x47\x61\x6d\x65\x6c\x65\x74\x4a\x53\x41\x6e\x69\x6d\x47\x65\x6e\x65\x72\x61\x74\x65\x64\x43\x6c\x61\x73\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UGameletJSGeneratedClass.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UGameletJSGeneratedClass::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x47\x61\x6d\x65\x6c\x65\x74\x4a\x53\x47\x65\x6e\x65\x72\x61\x74\x65\x64\x43\x6c\x61\x73\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UGameletJSGeneratedFunction.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UGameletJSGeneratedFunction::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x47\x61\x6d\x65\x6c\x65\x74\x4a\x53\x47\x65\x6e\x65\x72\x61\x74\x65\x64\x46\x75\x6e\x63\x74\x69\x6f\x6e");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UGameletJSWidgetGeneratedClass.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UGameletJSWidgetGeneratedClass::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x47\x61\x6d\x65\x6c\x65\x74\x4a\x53\x57\x69\x64\x67\x65\x74\x47\x65\x6e\x65\x72\x61\x74\x65\x64\x43\x6c\x61\x73\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UGameletTypeScriptBlueprint.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UGameletTypeScriptBlueprint::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x47\x61\x6d\x65\x6c\x65\x74\x54\x79\x70\x65\x53\x63\x72\x69\x70\x74\x42\x6c\x75\x65\x70\x72\x69\x6e\x74");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UGameletTypeScriptGeneratedClass.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UGameletTypeScriptGeneratedClass::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x47\x61\x6d\x65\x6c\x65\x74\x54\x79\x70\x65\x53\x63\x72\x69\x70\x74\x47\x65\x6e\x65\x72\x61\x74\x65\x64\x43\x6c\x61\x73\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UGameletTypeScriptObject.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UGameletTypeScriptObject::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x47\x61\x6d\x65\x6c\x65\x74\x54\x79\x70\x65\x53\x63\x72\x69\x70\x74\x4f\x62\x6a\x65\x63\x74");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction Default__GameletJSAnimGeneratedClass.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* Default__GameletJSAnimGeneratedClass::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x47\x61\x6d\x65\x6c\x65\x74\x4a\x53\x41\x6e\x69\x6d\x47\x65\x6e\x65\x72\x61\x74\x65\x64\x43\x6c\x61\x73\x73\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x44\x65\x66\x61\x75\x6c\x74\x5f\x5f\x47\x61\x6d\x65\x6c\x65\x74\x4a\x53\x41\x6e\x69\x6d\x47\x65\x6e\x65\x72\x61\x74\x65\x64\x43\x6c\x61\x73\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction Default__GameletJSGeneratedClass.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* Default__GameletJSGeneratedClass::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x47\x61\x6d\x65\x6c\x65\x74\x4a\x53\x47\x65\x6e\x65\x72\x61\x74\x65\x64\x43\x6c\x61\x73\x73\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x44\x65\x66\x61\x75\x6c\x74\x5f\x5f\x47\x61\x6d\x65\x6c\x65\x74\x4a\x53\x47\x65\x6e\x65\x72\x61\x74\x65\x64\x43\x6c\x61\x73\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction Default__GameletJSWidgetGeneratedClass.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* Default__GameletJSWidgetGeneratedClass::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x47\x61\x6d\x65\x6c\x65\x74\x4a\x53\x57\x69\x64\x67\x65\x74\x47\x65\x6e\x65\x72\x61\x74\x65\x64\x43\x6c\x61\x73\x73\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x44\x65\x66\x61\x75\x6c\x74\x5f\x5f\x47\x61\x6d\x65\x6c\x65\x74\x4a\x53\x57\x69\x64\x67\x65\x74\x47\x65\x6e\x65\x72\x61\x74\x65\x64\x43\x6c\x61\x73\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction Default__GameletTypeScriptGeneratedClass.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* Default__GameletTypeScriptGeneratedClass::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x47\x61\x6d\x65\x6c\x65\x74\x54\x79\x70\x65\x53\x63\x72\x69\x70\x74\x47\x65\x6e\x65\x72\x61\x74\x65\x64\x43\x6c\x61\x73\x73\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x44\x65\x66\x61\x75\x6c\x74\x5f\x5f\x47\x61\x6d\x65\x6c\x65\x74\x54\x79\x70\x65\x53\x63\x72\x69\x70\x74\x47\x65\x6e\x65\x72\x61\x74\x65\x64\x43\x6c\x61\x73\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0XC0000000
+	 * 	Name: Function GameletJsEnv.GameletDynamicDelegateProxy.Fire
+	 * 	Flags: (Final, Native, Public, BlueprintCallable)
+	 */
+	void UGameletDynamicDelegateProxy::Fire()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("\x46\x75\x6e\x63\x74\x69\x6f\x6e\x20\x47\x61\x6d\x65\x6c\x65\x74\x4a\x73\x45\x6e\x76\x2e\x47\x61\x6d\x65\x6c\x65\x74\x44\x79\x6e\x61\x6d\x69\x63\x44\x65\x6c\x65\x67\x61\x74\x65\x50\x72\x6f\x78\x79\x2e\x46\x69\x72\x65");
+		Function_GameletJsEnv_GameletDynamicDelegateProxy_Fire_Param params { };
+
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+
+	}
+}

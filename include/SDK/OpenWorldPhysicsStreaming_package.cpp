@@ -1,0 +1,210 @@
+/**
+ * Name: DeltaForceClient-Win64-Shipping
+ * Version : default
+ */ 
+#include "../SDK.h"
+
+namespace Dumper
+{
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FPhysXSerialActor.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FPhysXSerialActor::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x50\x68\x79\x73\x69\x63\x73\x53\x74\x72\x65\x61\x6d\x69\x6e\x67\x2e\x50\x68\x79\x73\x58\x53\x65\x72\x69\x61\x6c\x41\x63\x74\x6f\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FPhysXSerialBodyInstance.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FPhysXSerialBodyInstance::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x50\x68\x79\x73\x69\x63\x73\x53\x74\x72\x65\x61\x6d\x69\x6e\x67\x2e\x50\x68\x79\x73\x58\x53\x65\x72\x69\x61\x6c\x42\x6f\x64\x79\x49\x6e\x73\x74\x61\x6e\x63\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UPhysXDrawingSettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UPhysXDrawingSettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x50\x68\x79\x73\x69\x63\x73\x53\x74\x72\x65\x61\x6d\x69\x6e\x67\x2e\x50\x68\x79\x73\x58\x44\x72\x61\x77\x69\x6e\x67\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UPhysXDrawingComponent.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UPhysXDrawingComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x50\x68\x79\x73\x69\x63\x73\x53\x74\x72\x65\x61\x6d\x69\x6e\x67\x2e\x50\x68\x79\x73\x58\x44\x72\x61\x77\x69\x6e\x67\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UPhysXSerialBlendMask.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UPhysXSerialBlendMask::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x50\x68\x79\x73\x69\x63\x73\x53\x74\x72\x65\x61\x6d\x69\x6e\x67\x2e\x50\x68\x79\x73\x58\x53\x65\x72\x69\x61\x6c\x42\x6c\x65\x6e\x64\x4d\x61\x73\x6b");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UPhysXSerialBodySetup.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UPhysXSerialBodySetup::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x50\x68\x79\x73\x69\x63\x73\x53\x74\x72\x65\x61\x6d\x69\x6e\x67\x2e\x50\x68\x79\x73\x58\x53\x65\x72\x69\x61\x6c\x42\x6f\x64\x79\x53\x65\x74\x75\x70");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UPhysXSerialComponent.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UPhysXSerialComponent::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x50\x68\x79\x73\x69\x63\x73\x53\x74\x72\x65\x61\x6d\x69\x6e\x67\x2e\x50\x68\x79\x73\x58\x53\x65\x72\x69\x61\x6c\x43\x6f\x6d\x70\x6f\x6e\x65\x6e\x74");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction APhysXSceneProxyActor.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* APhysXSceneProxyActor::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x50\x68\x79\x73\x69\x63\x73\x53\x74\x72\x65\x61\x6d\x69\x6e\x67\x2e\x50\x68\x79\x73\x58\x53\x63\x65\x6e\x65\x50\x72\x6f\x78\x79\x41\x63\x74\x6f\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UPhysXProxyScheduler.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UPhysXProxyScheduler::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x50\x68\x79\x73\x69\x63\x73\x53\x74\x72\x65\x61\x6d\x69\x6e\x67\x2e\x50\x68\x79\x73\x58\x50\x72\x6f\x78\x79\x53\x63\x68\x65\x64\x75\x6c\x65\x72");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UPhysXProxySettings.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UPhysXProxySettings::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x50\x68\x79\x73\x69\x63\x73\x53\x74\x72\x65\x61\x6d\x69\x6e\x67\x2e\x50\x68\x79\x73\x58\x50\x72\x6f\x78\x79\x53\x65\x74\x74\x69\x6e\x67\x73");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction APhysXDrawingBase.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* APhysXDrawingBase::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x50\x68\x79\x73\x69\x63\x73\x53\x74\x72\x65\x61\x6d\x69\x6e\x67\x2e\x50\x68\x79\x73\x58\x44\x72\x61\x77\x69\x6e\x67\x42\x61\x73\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction APhysXDrawingNet.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* APhysXDrawingNet::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x50\x68\x79\x73\x69\x63\x73\x53\x74\x72\x65\x61\x6d\x69\x6e\x67\x2e\x50\x68\x79\x73\x58\x44\x72\x61\x77\x69\x6e\x67\x4e\x65\x74");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction APhysXDrawing.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* APhysXDrawing::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x50\x68\x79\x73\x69\x63\x73\x53\x74\x72\x65\x61\x6d\x69\x6e\x67\x2e\x50\x68\x79\x73\x58\x44\x72\x61\x77\x69\x6e\x67");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0XC0000000
+	 * 	Name: Function OpenWorldPhysicsStreaming.PhysXDrawingNet.ServerDestroy
+	 * 	Flags: (Net, NetReliable, Native, Event, Public, NetServer)
+	 */
+	void APhysXDrawingNet::ServerDestroy()
+	{
+		static UFunction* fn = nullptr;
+		if (!fn)
+			fn = UObject::FindObject<UFunction>("\x46\x75\x6e\x63\x74\x69\x6f\x6e\x20\x4f\x70\x65\x6e\x57\x6f\x72\x6c\x64\x50\x68\x79\x73\x69\x63\x73\x53\x74\x72\x65\x61\x6d\x69\x6e\x67\x2e\x50\x68\x79\x73\x58\x44\x72\x61\x77\x69\x6e\x67\x4e\x65\x74\x2e\x53\x65\x72\x76\x65\x72\x44\x65\x73\x74\x72\x6f\x79");
+		Function_OpenWorldPhysicsStreaming_PhysXDrawingNet_ServerDestroy_Param params { };
+
+		auto flags = fn->FunctionFlags;
+		fn->FunctionFlags |= 0x00000400;
+		UObject::ProcessEvent(fn, &params);
+		fn->FunctionFlags = flags;
+
+	}
+}

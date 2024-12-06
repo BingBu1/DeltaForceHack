@@ -1,0 +1,7 @@
+# 忽略vscode的一些设置
+/.cache/
+/build/
+/bin/
+
+*.ps1
+/temp/

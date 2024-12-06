@@ -1,0 +1,219 @@
+/**
+ * Name: DeltaForceClient-Win64-Shipping
+ * Version : default
+ */ 
+#include "../SDK.h"
+
+namespace Dumper
+{
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FCartesianRangeBound.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FCartesianRangeBound::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x4b\x61\x6e\x74\x61\x6e\x43\x68\x61\x72\x74\x73\x53\x6c\x61\x74\x65\x2e\x43\x61\x72\x74\x65\x73\x69\x61\x6e\x52\x61\x6e\x67\x65\x42\x6f\x75\x6e\x64");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FKantanCategoryStyle.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FKantanCategoryStyle::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x4b\x61\x6e\x74\x61\x6e\x43\x68\x61\x72\x74\x73\x53\x6c\x61\x74\x65\x2e\x4b\x61\x6e\x74\x61\x6e\x43\x61\x74\x65\x67\x6f\x72\x79\x53\x74\x79\x6c\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FKantanSeriesStyle.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FKantanSeriesStyle::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x4b\x61\x6e\x74\x61\x6e\x43\x68\x61\x72\x74\x73\x53\x6c\x61\x74\x65\x2e\x4b\x61\x6e\x74\x61\x6e\x53\x65\x72\x69\x65\x73\x53\x74\x79\x6c\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FCartesianAxisInstanceConfig.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FCartesianAxisInstanceConfig::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x4b\x61\x6e\x74\x61\x6e\x43\x68\x61\x72\x74\x73\x53\x6c\x61\x74\x65\x2e\x43\x61\x72\x74\x65\x73\x69\x61\x6e\x41\x78\x69\x73\x49\x6e\x73\x74\x61\x6e\x63\x65\x43\x6f\x6e\x66\x69\x67");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FKantanChartStyle.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FKantanChartStyle::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x4b\x61\x6e\x74\x61\x6e\x43\x68\x61\x72\x74\x73\x53\x6c\x61\x74\x65\x2e\x4b\x61\x6e\x74\x61\x6e\x43\x68\x61\x72\x74\x53\x74\x79\x6c\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FCartesianAxisRange.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FCartesianAxisRange::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x4b\x61\x6e\x74\x61\x6e\x43\x68\x61\x72\x74\x73\x53\x6c\x61\x74\x65\x2e\x43\x61\x72\x74\x65\x73\x69\x61\x6e\x41\x78\x69\x73\x52\x61\x6e\x67\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FCartesianAxisConfig.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FCartesianAxisConfig::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x4b\x61\x6e\x74\x61\x6e\x43\x68\x61\x72\x74\x73\x53\x6c\x61\x74\x65\x2e\x43\x61\x72\x74\x65\x73\x69\x61\x6e\x41\x78\x69\x73\x43\x6f\x6e\x66\x69\x67");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FKantanBarChartStyle.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FKantanBarChartStyle::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x4b\x61\x6e\x74\x61\x6e\x43\x68\x61\x72\x74\x73\x53\x6c\x61\x74\x65\x2e\x4b\x61\x6e\x74\x61\x6e\x42\x61\x72\x43\x68\x61\x72\x74\x53\x74\x79\x6c\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FKantanCartesianChartStyle.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FKantanCartesianChartStyle::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x4b\x61\x6e\x74\x61\x6e\x43\x68\x61\x72\x74\x73\x53\x6c\x61\x74\x65\x2e\x4b\x61\x6e\x74\x61\x6e\x43\x61\x72\x74\x65\x73\x69\x61\x6e\x43\x68\x61\x72\x74\x53\x74\x79\x6c\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction FKantanCartesianPlotScale.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* FKantanCartesianPlotScale::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x53\x63\x72\x69\x70\x74\x53\x74\x72\x75\x63\x74\x20\x4b\x61\x6e\x74\x61\x6e\x43\x68\x61\x72\x74\x73\x53\x6c\x61\x74\x65\x2e\x4b\x61\x6e\x74\x61\x6e\x43\x61\x72\x74\x65\x73\x69\x61\x6e\x50\x6c\x6f\x74\x53\x63\x61\x6c\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UKantanBarChartWidgetStyle.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UKantanBarChartWidgetStyle::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4b\x61\x6e\x74\x61\x6e\x43\x68\x61\x72\x74\x73\x53\x6c\x61\x74\x65\x2e\x4b\x61\x6e\x74\x61\x6e\x42\x61\x72\x43\x68\x61\x72\x74\x57\x69\x64\x67\x65\x74\x53\x74\x79\x6c\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UKantanCartesianChartWidgetStyle.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UKantanCartesianChartWidgetStyle::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4b\x61\x6e\x74\x61\x6e\x43\x68\x61\x72\x74\x73\x53\x6c\x61\x74\x65\x2e\x4b\x61\x6e\x74\x61\x6e\x43\x61\x72\x74\x65\x73\x69\x61\x6e\x43\x68\x61\x72\x74\x57\x69\x64\x67\x65\x74\x53\x74\x79\x6c\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UKantanCategoryStyleSet.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UKantanCategoryStyleSet::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4b\x61\x6e\x74\x61\x6e\x43\x68\x61\x72\x74\x73\x53\x6c\x61\x74\x65\x2e\x4b\x61\x6e\x74\x61\x6e\x43\x61\x74\x65\x67\x6f\x72\x79\x53\x74\x79\x6c\x65\x53\x65\x74");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UKantanPointStyle.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UKantanPointStyle::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4b\x61\x6e\x74\x61\x6e\x43\x68\x61\x72\x74\x73\x53\x6c\x61\x74\x65\x2e\x4b\x61\x6e\x74\x61\x6e\x50\x6f\x69\x6e\x74\x53\x74\x79\x6c\x65");
+		return ptr;
+	}
+
+	/**
+	 * Function: 
+	 * 	RVA: 0X000000
+	 * 	Name: PredefinedFunction UKantanSeriesStyleSet.StaticClass
+	 * 	Flags: (Predefined, Static)
+	 */
+	UClass* UKantanSeriesStyleSet::StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr)
+			ptr = UObject::FindClass("\x43\x6c\x61\x73\x73\x20\x4b\x61\x6e\x74\x61\x6e\x43\x68\x61\x72\x74\x73\x53\x6c\x61\x74\x65\x2e\x4b\x61\x6e\x74\x61\x6e\x53\x65\x72\x69\x65\x73\x53\x74\x79\x6c\x65\x53\x65\x74");
+		return ptr;
+	}
+
+}
