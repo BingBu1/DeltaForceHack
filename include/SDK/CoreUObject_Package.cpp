@@ -1206,6 +1206,9 @@ namespace Dumper
 	 */
 	void UObject::ProcessEvent(class UFunction* function, void* parms)
 	{
+		auto _this = reinterpret_cast<uint64_t*>(this);
+		if(!function || !_this)
+			return;
 		GetVFunction<void(*)(UObject*, class UFunction*, void*)>(this, PROCESS_EVENTS_INDEX)(this, function, parms);
 	}
 

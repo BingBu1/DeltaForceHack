@@ -1,6 +1,14 @@
 #pragma once
 #include "BaseMenu.h"
 
+
+
+struct DrawItem{
+	std::string DrawStr;
+	ImVec2 DrawPos;
+	ImColor DrawColor;
+};
+
 class Esp : public BaseMenu {
     public:
 	static auto GetInstance() {
@@ -13,7 +21,7 @@ class Esp : public BaseMenu {
 
     std::string GetActorName(Dumper::AActor *Actor);
 
-    void DrawPlayerEsp(Dumper::AActor *Actor);
+    void DrawNameEsp(Dumper::AActor *Actor);
 
     void BonePosToSceen(Dumper::FVector &A, Dumper::FVector &B, Dumper::FVector2D &OutA, Dumper::FVector2D &OutB);
 
@@ -23,6 +31,14 @@ class Esp : public BaseMenu {
 
 	void DrawUnkName(Dumper::AActor *Actor);
 
+	void DrawPlayer(Dumper::AActor * Actor);
+
+	void DrwaBackPlayer(Dumper::AActor * Actor);
+
+	void DrawOther(Dumper::AActor * Actor);
+
+	void ExecDraw();
+
     virtual void DrawMenu()override;
 
     virtual void AlwaysDraw()override;
@@ -31,14 +47,25 @@ class Esp : public BaseMenu {
 
 	private:
 	inline static Esp *Instance{};
-	bool Esp_Enable{};
+	bool EspName_Enable{};
 	bool Esp_Impending{};
 	bool Esp_Friend{};
 	bool Esp_DrawBone{};
 	bool Esp_DrawUnk{};
+	bool Esp_DrwaPick{};
+	bool Esp_DrwaPlayerBaack{};
+	float Esp_Disance{};
+	float Esp_ImpendDisance{};
 	int Wide{}, height{};
 	ImDrawList *Draw{};
+
+	std::vector<DrawItem> DrawName;
 };
+
+
+
+
+
 
 
 

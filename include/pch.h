@@ -5,12 +5,14 @@
 #include <vector>
 #include <map>
 #include <set>
+#include <queue>
 #include <unordered_map>
 #include <unordered_set>
 #include <memory>
 #include <thread>
 #include <mutex>
 #include <locale>
+#include <codecvt>
 #include <random>
 
 #include "MyHookAPi.hpp"

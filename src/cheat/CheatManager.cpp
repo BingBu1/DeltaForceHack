@@ -36,6 +36,9 @@ void CheatManager::Search(){
 void CheatManager::Init(){
 	Game = reinterpret_cast<uint64_t>(GetModuleHandleW(xorstr_(L"DeltaForceClient-Win64-Shipping.exe")));
     Search();
+	while (!(*Dumper::UWorld::GWorld ) || IsBadReadPtr(*Dumper::UWorld::GWorld, 8)) {
+		Sleep(1000);
+	}
 #define Init(x) x::GetInstance()
 	Init(Esp);
 #undef Init

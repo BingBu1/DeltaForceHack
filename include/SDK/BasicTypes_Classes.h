@@ -71,7 +71,7 @@ namespace Dumper
 		}
 
 		Iterator end() {
-			return _data + _count + 1;    // 假设_size是数组的大小
+			return _data + _count;    // 假设_size是数组的大小
 		}
 	};
 
@@ -101,8 +101,9 @@ namespace Dumper
 		class UObject*                                             Object;                                                  // 0x0000(0x0008)
 		int32_t                                                    Flags;                                                   // 0x0008(0x0004)
 		int32_t                                                    ClusterIndex;                                            // 0x000C(0x0004)
+		int32_t													   Pad_0x10;
 		int32_t                                                    SerialNumber;                                            // 0x0010(0x0004)
-		unsigned char                                              pad_3O6WJCU9AC[0x04];                                    // 0x0014(0x0004)
+		// unsigned char                                              pad_3O6WJCU9AC[0x04];                                    // 0x0014(0x0004)
 
 	public:
 		bool IsUnreachable() const;
@@ -120,7 +121,7 @@ namespace Dumper
 		int32_t                                                    NumElements;                                             // 0x0000(0x0000)
 		int32_t                                                    NumChunks;                                               // 0x0000(0x0000)
 	private:
-		static const constexpr int32_t                             NumElementsPerChunk = 64 * 1024;                         // 0x0000(0x0000)
+		static const constexpr int32_t                             NumElementsPerChunk = 0x13C00;                         // 0x0000(0x0000)
 		int pad_0x8;
 		FUObjectItem**                                             Objects;                                                 // 0x0000(0x0000)
 	public:

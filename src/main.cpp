@@ -4,7 +4,7 @@
 #include <Shlobj_core.h>
 #include <minidumpapiset.h>
 #include <TlHelp32.h>
-
+#include "Anit.hpp"
 #pragma comment(lib,"Dbghelp.lib")
 
 std::unordered_map<void*, int> Error_Map{};
@@ -64,10 +64,11 @@ LONG VehExp(_EXCEPTION_POINTERS *ExceptionInfo) {
 void Run() {
 	DebugCmdOpen();
 	AddVectoredExceptionHandler(0, VehExp);
+	// AnitAnitCheat::EnableByPass();
 	auto dx12  = HookDx12Manager::GetInstance();
 	auto Cheat = CheatManager::GetInstance();
-	dx12->HookDx12();
 	Cheat->Init();
+	dx12->HookDx12();
 }
 
 [[clang::annotate("+indbr ^icall=3 ^indbr=0")]]
@@ -76,6 +77,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call,
   switch (ul_reason_for_call) {
   case DLL_PROCESS_ATTACH: {
     ULONG_PTR Moudle_ = reinterpret_cast<ULONG_PTR>(hModule);
+	AnitAnitCheat::THIS_Module = hModule;
     CloseHandle(CreateThread(NULL, NULL, LPTHREAD_START_ROUTINE(Run),
                              new HMODULE(hModule), NULL, NULL));
     break;

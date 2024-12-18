@@ -14,6 +14,11 @@ set(DLL_SOURCE ${PROJECT_SOURCE_DIR}/bin/${PROJECT_NAME}.dll)
 
 #傻逼char8去死
 add_compile_options(-fno-char8_t -Wmicrosoft-cast)
+#修复static变量，如果不开启此选项需要修复静态Tls
+add_compile_options(-fno-threadsafe-statics)
+
+#OLLVM 间接全局  间接CALL 控制流混淆
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mllvm -irobf-icall -mllvm -irobf-indgv")
 
 set(SDK_PATH "include/SDK/")
 
@@ -47,6 +52,9 @@ BasicTypes_Package.cpp
 Engine_package.cpp
 CoreUObject_Package.cpp
 GPGameplay_Package.cpp
+DFMGameplay_Package.cpp
+BP_WeaponMeleeNoModular_Package.cpp
+BP_InventoryPickup_Package.cpp
 )
 
 set(Sdk_)

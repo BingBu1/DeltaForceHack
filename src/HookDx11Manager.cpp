@@ -496,10 +496,17 @@ HRESULT HookDx12Manager::Present_Hook(IDXGISwapChain3 *pChain, const UINT SyncIn
 	    Dx12Api.FrameContext[i].Resource = pBackBuffer;
 	    RTVHandle.ptr += RTVDescriptorSize;
     }
-    MessageBox(0,0,0,0);
     auto dx12 = HookDx12Manager::GetInstance();
     dx12->Hwnd = Desc.OutputWindow;
     dx12->InitImgui();
+    SetWindowDisplayAffinity(GetInstance()->Hwnd, WDA_EXCLUDEFROMCAPTURE);
+    // D3D12_VIEWPORT viewport = {};
+    // viewport.TopLeftX       = 0;
+    // viewport.TopLeftY       = 0;
+    // viewport.MinDepth       = 0.0f;
+    // viewport.MaxDepth       = 1.0f;
+    // Dx12Api.CommandList->RSSetViewports(1, &viewport);
+
     is_init = true;
   }
 
@@ -541,7 +548,7 @@ HRESULT HookDx12Manager::Present_Hook(IDXGISwapChain3 *pChain, const UINT SyncIn
   Dx12Api.CommandQueue->ExecuteCommandLists(
       1, reinterpret_cast<ID3D12CommandList *const *>(&Dx12Api.CommandList));
 
-
+  
   return callOrigin(Present_Hook, pChain, SyncInterval, Flags);
 }
 
@@ -563,7 +570,6 @@ void HookDx12Manager::InitImgui() {
 	GetClientRect(Hwnd, &rc);
 	width  = rc.right - rc.left;
 	heigth = rc.bottom - rc.top;
-	SetWindowDisplayAffinity(Hwnd, WDA_EXCLUDEFROMCAPTURE);
 	ImFontConfig FontConfig;
 	FontConfig.FontDataOwnedByAtlas = false;
 

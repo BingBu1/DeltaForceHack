@@ -29,6 +29,35 @@ inline Dumper::TArray<Dumper::AActor *> *GetAActorList() {
 	return RetVal;
 }
 
+inline void GetPickBaseList(Dumper::TArray<Dumper::AActor *> &ActorList) {
+	static auto GamePlay = Dumper::UObject::FindObject<Dumper::UGameplayStatics>();
+	if(!GamePlay)
+		GamePlay = Dumper::UObject::FindObject<Dumper::UGameplayStatics>();
+	auto PickupClass = Dumper::APickupBase::StaticClass();
+	if(!PickupClass)
+		return;
+	GamePlay->STATIC_GetAllActorsOfClass(GetWorld(), PickupClass, ActorList);
+}
+
+inline void GetBoxOpenBox(Dumper::TArray<Dumper::AActor *> &ActorList) {
+	static auto GamePlay = Dumper::UObject::FindObject<Dumper::UGameplayStatics>();
+	if(!GamePlay)
+		GamePlay = Dumper::UObject::FindObject<Dumper::UGameplayStatics>();
+	auto BoxClass = Dumper::AInventoryPickup_OpenBox::StaticClass();
+	if(!BoxClass)
+		return;
+	GamePlay->STATIC_GetAllActorsOfClass(GetWorld(), BoxClass, ActorList);
+}
+
+inline void GetBoxontainer(Dumper::TArray<Dumper::AActor *> &ActorList) {
+	static auto GamePlay = Dumper::UObject::FindObject<Dumper::UGameplayStatics>();
+	if(!GamePlay)
+		GamePlay = Dumper::UObject::FindObject<Dumper::UGameplayStatics>();
+	auto Box2Class = Dumper::AInventoryPickup_Container::StaticClass();
+	if(!Box2Class)
+		return;
+	GamePlay->STATIC_GetAllActorsOfClass(GetWorld(), Box2Class, ActorList);
+}
 
 inline bool IsActorVisible(Dumper::AActor *Me, Dumper::AActor *Target) {
 	static Dumper::UKismetSystemLibrary * Obj;
@@ -43,23 +72,49 @@ inline bool IsActorVisible(Dumper::AActor *Me, Dumper::AActor *Target) {
 
 	if(!Obj)
 		return false;
-
+	if(!Me || ! Target)
+		return false;
 	World = GetWorld();
 	if(!World)
 		return false;
-	if(Target->IsA(Dumper::AGPCharacterBase::StaticClass()) == false)
-		return false;
 
-	Me->GetActorEyesViewPoint(Eyes, EyesRotation);
 	Start = Eyes;
 	End = static_cast<Dumper::AGPCharacterBase*>(Target)->Mesh->GetBoneWorldPos(PlayerBone::Neck);
 
 	bool IsSurrse = Obj->STATIC_LineTraceSingle(World, Start, End, Dumper::ETraceTypeQuery::TraceTypeQuery1, true,
 			            ig, Dumper::EDrawDebugTrace::None, res, true, col, col, 0.f);
-	if(!IsSurrse || !res.bBlockingHit)
+	if(IsSurrse) {
+		if(res.Actor.Get() != Target) {
+			IsSurrse = false;
+		}
+	}
+
+	return IsSurrse;
+
+	// auto PlayerC = GetPlayerContorller();
+	// if(!World)
+	// 	return false;
+	// if(Target->IsA(Dumper::AGPCharacterBase::StaticClass()) == false)
+	// 	return false;
+	// Me->GetActorEyesViewPoint(Eyes, EyesRotation);
+	// return PlayerC->LineOfSightTo(Target, Eyes, false);
+}
+
+inline bool IsFriend(Dumper::AActor *A, Dumper::AActor *B) {
+	if(!A || !B)
 		return false;
-	auto HitActor = Dumper::UObject::GetGlobalObjects().GetObjectPtr(res.Actor.ObjectIndex);
-	return (HitActor ? HitActor->Object : NULL) == Target;
+	auto Class = Dumper::ADFMCharacter::StaticClass();
+	if(!A->IsA(Class) || !B->IsA(Class))	
+		return false;
+	auto ACharaterA	        = static_cast<Dumper::ADFMCharacter *>(A);
+	auto ACharaterB	        = static_cast<Dumper::ADFMCharacter *>(B);
+	if(!ACharaterA->PlayerState || !ACharaterB->PlayerState)
+		return false;
+	uint32_t ACampId        = static_cast<Dumper::AGPPlayerState *>(ACharaterA->PlayerState)->GetCamp();
+	uint32_t BCampId        = static_cast<Dumper::AGPPlayerState *>(ACharaterB->PlayerState)->GetCamp();
+	uint32_t ATeamId        = static_cast<Dumper::AGPPlayerState *>(ACharaterA->PlayerState)->GetTeamID();
+	uint32_t BTeamId = static_cast<Dumper::AGPPlayerState *>(ACharaterB->PlayerState)->GetTeamID();
+	return ACampId == BCampId || ATeamId == BTeamId;
 }
 
 
