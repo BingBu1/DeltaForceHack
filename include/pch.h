@@ -14,6 +14,8 @@
 #include <locale>
 #include <codecvt>
 #include <random>
+#include <ranges>
+#include <cmath>
 
 #include "MyHookAPi.hpp"
 

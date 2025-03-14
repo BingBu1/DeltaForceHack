@@ -31,6 +31,9 @@ void CheatManager::Search(){
 	//---------------------------------------------------------------------
 	m_search.SearchMem(gm, 0, xorstr_("E8 ?? ?? ?? ?? 48 8B CB 0F 10 00 0F 11 83 ?? ?? ?? ?? 0F 10 48"));
 	GET_BONE_MATRIX_OFFSET = m_search.GetSearchResult<size_t>(0x0, ResultStatus::Call) - Game;
+
+	//偏移
+	SUPER_Offset = 0x50;
 }
 
 void CheatManager::Init(){

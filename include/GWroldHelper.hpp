@@ -36,7 +36,10 @@ inline void GetPickBaseList(Dumper::TArray<Dumper::AActor *> &ActorList) {
 	auto PickupClass = Dumper::APickupBase::StaticClass();
 	if(!PickupClass)
 		return;
-	GamePlay->STATIC_GetAllActorsOfClass(GetWorld(), PickupClass, ActorList);
+	auto World = GetWorld();
+	if(!World)
+		return;
+	GamePlay->STATIC_GetAllActorsOfClass(World, PickupClass, ActorList);
 }
 
 inline void GetBoxOpenBox(Dumper::TArray<Dumper::AActor *> &ActorList) {
@@ -72,14 +75,21 @@ inline bool IsActorVisible(Dumper::AActor *Me, Dumper::AActor *Target) {
 
 	if(!Obj)
 		return false;
+	
 	if(!Me || ! Target)
 		return false;
 	World = GetWorld();
 	if(!World)
 		return false;
-
+	Dumper::AGPCharacterBase *Player = static_cast<Dumper::AGPCharacterBase *>(Me);
+	Dumper::AGPCharacterBase* TargetChar = static_cast<Dumper::AGPCharacterBase*>(Target);
+	if(!Player || !TargetChar)
+		return false;
+	if(!Player->Mesh || !TargetChar->Mesh)
+		return false;
+	Player->GetActorEyesViewPoint(Eyes, EyesRotation);
 	Start = Eyes;
-	End = static_cast<Dumper::AGPCharacterBase*>(Target)->Mesh->GetBoneWorldPos(PlayerBone::Neck);
+	End = TargetChar->Mesh->GetBoneWorldPos(PlayerBone::Neck);
 
 	bool IsSurrse = Obj->STATIC_LineTraceSingle(World, Start, End, Dumper::ETraceTypeQuery::TraceTypeQuery1, true,
 			            ig, Dumper::EDrawDebugTrace::None, res, true, col, col, 0.f);
@@ -114,8 +124,53 @@ inline bool IsFriend(Dumper::AActor *A, Dumper::AActor *B) {
 	uint32_t BCampId        = static_cast<Dumper::AGPPlayerState *>(ACharaterB->PlayerState)->GetCamp();
 	uint32_t ATeamId        = static_cast<Dumper::AGPPlayerState *>(ACharaterA->PlayerState)->GetTeamID();
 	uint32_t BTeamId = static_cast<Dumper::AGPPlayerState *>(ACharaterB->PlayerState)->GetTeamID();
-	return ACampId == BCampId || ATeamId == BTeamId;
+	return ACampId == BCampId;
 }
 
+inline int32_t GetArmorLevel(Dumper::ADFMCharacter *Achar, Dumper::EEquipmentType Type) {
+	if (Type == Dumper::EEquipmentType::Max || ! Achar) {
+		return 0;
+	}
+	if(!Achar->DFMBlackboard)
+		return 0;
+	return Achar->DFMBlackboard->GetArmorLevel(Type);
+}
+
+inline Dumper::TArray<Dumper::FArmorInfo> *GetArmorInfoArray(Dumper::ADFMCharacter *Achar) {
+	if(!Achar->DFMBlackboard)
+		return nullptr;
+	if(!Achar->DFMBlackboard->CharacterEquipComponent)
+		return nullptr;
+	auto Equip = Achar->DFMBlackboard->CharacterEquipComponent;
+	return &Equip->EquipedArmorInfoArray;
+}
+
+inline int32_t GetArmorLevel2(Dumper::ADFMCharacter *Achar, Dumper::EEquipmentType Type) {
+	if (Type == Dumper::EEquipmentType::Max || ! Achar) {
+		return 0;
+	}
+	auto Array = GetArmorInfoArray(Achar);
+	if(!Array)
+		return 0;
+	for(auto &Info : *Array) {
+		if(Info.EquipmentType == Type){
+			return Info.ArmorLevel;
+		}
+	}
+	return 0;
+}
+
+inline std::string GetArmorInfostr(Dumper::ADFMCharacter *Achar) {
+	auto Array = GetArmorInfoArray(Achar);
+	std::string Armorstr{};
+	if(!Array)
+		return "";
+	for(auto &Info : *Array) {
+		auto ArmorName = Info.ProtecetName.GetName();
+		int32_t ArmorLevel = Info.ArmorLevel;
+		Armorstr = fmt::format("{}{}{}\n",Armorstr,ArmorName,ArmorLevel);
+	}
+	return Armorstr;
+}
 
 }    // namespace WorldHelper

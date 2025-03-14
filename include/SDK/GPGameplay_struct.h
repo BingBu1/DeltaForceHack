@@ -8,12 +8,12 @@ namespace Dumper {
 enum class EGameRuleType : UINT8 {
 	None = 0,
 	Rule_SafeHouse = 1,
-	Rule_Discovery = 2,
-	Rule_PVERaid = 3,
-	Rule_SOL = 4,
-	Rule_Raid = 5,
-	Rule_BattleField = 6,
-	EGameRuleType_MAX = 7
+	Rule_Discovery = 4,
+	Rule_PVERaid = 8,
+	Rule_SOL = 16,
+	Rule_Raid = 32,
+	Rule_BattleField = 64,
+	EGameRuleType_MAX = 65
 };
 
 // Enum GPGameplay.EModularPartNodeType
@@ -622,25 +622,25 @@ enum class ERankSkillUIState : UINT8 {
 };
 
 // Enum GPGameplay.EMarkFeature
-enum class EMarkFeature : UINT8 {
-	UpdateScreenPosOnce = 0,
-	UpdateScreenPos = 1,
-	UpdateScreenPosFromTargetActor = 2,
-	UpdateScreenPosFromGivenLocation = 3,
-	UpdateScreenPosByController = 4,
-	UpdateScreenPosByMatrix = 5,
-	UpdateScreenPosEnableTraceXYZ = 6,
-	UpdateScreenPosEnableTraceXY = 7,
-	Update3DDis = 8,
-	Update2DDis = 9,
-	UpdateDir = 10,
-	UpdateAimed = 11,
-	UpdateAimedOnTarget = 12,
-	UpdateAimedBasedOnRadialDistance = 13,
-	UpdateHasCoverBetween = 14,
-	UpdateHasCoverBetweenUseRayTrace = 15,
-	UpdateSizeOnDis = 16,
-	EMarkFeature_MAX = 17
+enum class EMarkFeature : int {
+	UpdateScreenPosOnce = 1,
+	UpdateScreenPos = 2,
+	UpdateScreenPosFromTargetActor = 4,
+	UpdateScreenPosFromGivenLocation = 8,
+	UpdateScreenPosByController = 16,
+	UpdateScreenPosByMatrix = 32,
+	UpdateScreenPosEnableTraceXYZ = 64,
+	UpdateScreenPosEnableTraceXY = 128,
+	Update3DDis = 1024,
+	Update2DDis = 2048,
+	UpdateDir = 32768,
+	UpdateAimed = 1048576,
+	UpdateAimedOnTarget = 2097152,
+	UpdateAimedBasedOnRadialDistance = 4194304,
+	UpdateHasCoverBetween = 33554432,
+	UpdateHasCoverBetweenUseRayTrace = 67108864,
+	UpdateSizeOnDis = 1073741824,
+	EMarkFeature_MAX = 1073741825
 };
 
 // Enum GPGameplay.ECountDownPriority
@@ -709,11 +709,11 @@ enum class AttributeAdditionType : UINT8 {
 // Enum GPGameplay.EMarkerCoordinatedType
 enum class EMarkerCoordinatedType : UINT8 {
 	None = 0,
-	MandelBrick = 1,
-	MandelBrick_MapMarked = 2,
-	HighValueBox_MapMarked = 3,
-	MarkingItemMarker = 4,
-	EMarkerCoordinatedType_MAX = 5
+	MandelBrick = 31,
+	MandelBrick_MapMarked = 41,
+	HighValueBox_MapMarked = 42,
+	MarkingItemMarker = 51,
+	EMarkerCoordinatedType_MAX = 52
 };
 
 // Enum GPGameplay.ERepairEventType
@@ -857,21 +857,21 @@ enum class EBulletHitActionType : UINT8 {
 enum class ECampType : UINT8 {
 	BF_DeltaCamp0 = 0,
 	BF_DeltaCamp1 = 1,
-	SOL_DeltaPMC = 2,
-	SOL_DarkTide = 3,
-	SOL_Hudson = 4,
-	Raid_DeltaPMC = 5,
-	Raid_DarkTide = 6,
-	Raid_Hudson = 7,
-	BF_Hudson = 8,
-	SafeHouse_Player = 9,
-	SafeHouse_NPC = 10,
-	SafeHouse_RangeTarget = 11,
-	Vehicle = 12,
-	Neutral = 13,
-	SOL_ContractPlayer = 14,
-	SOL_BossTeam = 15,
-	Max = 16
+	SOL_DeltaPMC = 101,
+	SOL_DarkTide = 102,
+	SOL_Hudson = 103,
+	Raid_DeltaPMC = 104,
+	Raid_DarkTide = 105,
+	Raid_Hudson = 106,
+	BF_Hudson = 109,
+	SafeHouse_Player = 110,
+	SafeHouse_NPC = 111,
+	SafeHouse_RangeTarget = 112,
+	Vehicle = 112,
+	Neutral = 113,
+	SOL_ContractPlayer = 5,
+	SOL_BossTeam = 107,
+	Max = 255
 };
 
 // Enum GPGameplay.ECharacterSnatshotSubPose
@@ -1075,7 +1075,7 @@ enum class EAnimState : UINT8 {
 	Medical = 11,
 	Moving = 12,
 	ImpendingDeath = 13,
-	Max = 14
+	Max = 32
 };
 
 // Enum GPGameplay.EAnimKnockbackType
@@ -1168,17 +1168,17 @@ enum class EAnimVehicleSeatPos : UINT8 {
 // Enum GPGameplay.EAnimLoadPriority
 enum class EAnimLoadPriority : UINT8 {
 	Low = 0,
-	Medium = 1,
-	High = 2,
-	SuperHigh = 3,
-	EAnimLoadPriority_MAX = 4
+	Medium = 50,
+	High = 100,
+	SuperHigh = 200,
+	EAnimLoadPriority_MAX = 201
 };
 
 // Enum GPGameplay.EGPEventToggleState
 enum class EGPEventToggleState : UINT8 {
-	TURN_ON = 0,
-	TURN_OFF = 1,
-	TURN_MAX = 2
+	TURN_ON = 6,
+	TURN_OFF = 7,
+	TURN_MAX = 8
 };
 
 // Enum GPGameplay.EGPAnimOperationInterruptType
@@ -1193,19 +1193,19 @@ enum class EGPAnimOperationInterruptType : UINT8 {
 enum class EGPAnimNotifyLogicalBreakType : UINT8 {
 	Default = 0,
 	LogicReload_Complete = 1,
-	Reload_Ready = 2,
-	EventToggle_TurnOn = 3,
-	EventToggle_TurnOff = 4,
-	Fire_Break = 5,
-	Equip_Break = 6,
-	Fire_Break_End = 7,
-	Do_Fire = 8,
-	EnableSprint_ThrowableWeapon = 9,
-	Show_PreviewLine = 10,
-	Throwable_HideMesh = 11,
-	Throwable_ShowMesh = 12,
-	Throwable_Unlock = 13,
-	EGPAnimNotifyLogicalBreakType_MAX = 14
+	Reload_Ready = 5,
+	EventToggle_TurnOn = 6,
+	EventToggle_TurnOff = 7,
+	Fire_Break = 8,
+	Equip_Break = 9,
+	Fire_Break_End = 10,
+	Do_Fire = 11,
+	EnableSprint_ThrowableWeapon = 12,
+	Show_PreviewLine = 13,
+	Throwable_HideMesh = 14,
+	Throwable_ShowMesh = 15,
+	Throwable_Unlock = 16,
+	EGPAnimNotifyLogicalBreakType_MAX = 17
 };
 
 // Enum GPGameplay.ERetargetConfig
@@ -1241,22 +1241,22 @@ enum class ELocomotionTransitionType : UINT8 {
 
 // Enum GPGameplay.EAssasinateAnimType
 enum class EAssasinateAnimType : UINT8 {
-	Stand = 0,
-	Impending = 1,
-	Prone = 2,
-	EAssasinateAnimType_MAX = 3
+	Stand = 1,
+	Impending = 2,
+	Prone = 4,
+	EAssasinateAnimType_MAX = 5
 };
 
 // Enum GPGameplay.ESmallActionTrigger
 enum class ESmallActionTrigger : UINT8 {
-	EStill2NotStill = 0,
-	ENotStil2Still = 1,
-	EFiring2NotFiring = 2,
-	EFasterMove2Walk = 3,
-	EJumping2Land = 4,
-	EStand2Crouch = 5,
-	ECrouch2Stand = 6,
-	ESmallActionTrigger_MAX = 7
+	EStill2NotStill = 1,
+	ENotStil2Still = 2,
+	EFiring2NotFiring = 4,
+	EFasterMove2Walk = 8,
+	EJumping2Land = 16,
+	EStand2Crouch = 32,
+	ECrouch2Stand = 64,
+	ESmallActionTrigger_MAX = 65
 };
 
 // Enum GPGameplay.ESmallActionState
@@ -1633,9 +1633,9 @@ enum class ECharacterQTEStateRight : UINT8 {
 	QTERight_None = 0,
 	QTERight_MineActivate = 1,
 	QTERight_SelfCure = 2,
-	QTERight_Assassinate = 3,
-	QTERight_Rescue = 4,
-	QTERight_MAX = 5
+	QTERight_Assassinate = 4,
+	QTERight_Rescue = 8,
+	QTERight_MAX = 9
 };
 
 // Enum GPGameplay.ECharacterQTEStateLeft
@@ -1682,10 +1682,10 @@ enum class ECollisionState : UINT8 {
 
 // Enum GPGameplay.EProcessInputCompReason
 enum class EProcessInputCompReason : UINT8 {
-	EProcessInputReason_WatchingCCTV = 0,
-	EProcessInputReason_WeaponAssembler = 1,
-	EProcessInputReason_HALLDISPLAY = 2,
-	EProcessInputReason_MAX = 3
+	EProcessInputReason_WatchingCCTV = 1,
+	EProcessInputReason_WeaponAssembler = 2,
+	EProcessInputReason_HALLDISPLAY = 4,
+	EProcessInputReason_MAX = 5
 };
 
 // Enum GPGameplay.EAICharacterTag
@@ -1935,8 +1935,8 @@ enum class EPlayerLeanType : UINT8 {
 	PlayerLeanType_NotLean = 0,
 	PlayerLeanType_LeftLean = 1,
 	PlayerLeanType_RightLean = 2,
-	PlayerLeanType_Toggle = 3,
-	PlayerLeanType_MAX = 4
+	PlayerLeanType_Toggle = 16,
+	PlayerLeanType_MAX = 17
 };
 
 // Enum GPGameplay.ESwimImmediateAudioType
@@ -2427,8 +2427,8 @@ enum class ELastHitPosition : UINT8 {
 	RightArm = 4,
 	LeftLeg = 5,
 	RightLeg = 6,
-	None = 7,
-	ELastHitPosition_MAX = 8
+	None = 99,
+	ELastHitPosition_MAX = 100
 };
 
 // Enum GPGameplay.ESpecialWeaponMatch
@@ -2458,10 +2458,10 @@ enum class EGameTeamMemberCountType : UINT8 {
 	EGameTeamMemberCountType_None = 0,
 	EGameTeamMemberCountType_2 = 1,
 	EGameTeamMemberCountType_3 = 2,
-	EGameTeamMemberCountType_5 = 3,
-	EGameTeamMemberCountType_6 = 4,
-	EGameRoomType_Max = 5,
-	EGameTeamMemberCountType_MAX = 6
+	EGameTeamMemberCountType_5 = 4,
+	EGameTeamMemberCountType_6 = 5,
+	EGameRoomType_Max = 6,
+	EGameTeamMemberCountType_MAX = 7
 };
 
 // Enum GPGameplay.EGameRoomType
@@ -2884,12 +2884,12 @@ enum class EMarkingLocationType : UINT8 {
 
 // Enum GPGameplay.EGameMarkFeature
 enum class EGameMarkFeature : UINT8 {
-	UpdateDistance = 0,
-	UpdateHasCoverBetween = 1,
-	UpdateHasAimed = 2,
-	UpdateHasAimedByCircle = 3,
-	UpdateScaleWithDistance = 4,
-	EGameMarkFeature_MAX = 5
+	UpdateDistance = 1,
+	UpdateHasCoverBetween = 2,
+	UpdateHasAimed = 4,
+	UpdateHasAimedByCircle = 8,
+	UpdateScaleWithDistance = 16,
+	EGameMarkFeature_MAX = 17
 };
 
 // Enum GPGameplay.EInteractorMarkerType
@@ -3119,10 +3119,10 @@ enum class EMarkerUIWigetType : UINT8 {
 	None = 0,
 	DistanceText = 1,
 	NameText = 2,
-	Bar = 3,
-	Icon = 4,
-	All = 5,
-	EMarkerUIWigetType_MAX = 6
+	Bar = 4,
+	Icon = 8,
+	All = 15,
+	EMarkerUIWigetType_MAX = 16
 };
 
 // Enum GPGameplay.ERevealMarkerReason
@@ -3166,18 +3166,18 @@ enum class MarkType : UINT8 {
 // Enum GPGameplay.ENetworkNotifyPriority
 enum class ENetworkNotifyPriority : UINT8 {
 	NetworkIdentityNotifyPriority_NoUse = 0,
-	NetworkIdentityNotifyPriority_Default = 1,
-	NetworkIdentityNotifyPriority_Blackboard = 2,
-	NetworkIdentityNotifyPriority_ActorRoot = 3,
-	NetworkIdentityNotifyPriority_First = 4,
-	NetworkIdentityNotifyPriority_Second = 5,
-	NetworkIdentityNotifyPriority_Third = 6,
-	NetworkIdentityNotifyPriority_Fourth = 7,
-	NetworkIdentityNotifyPriority_Fifth = 8,
-	NetworkIdentityNotifyPriority_Sixth = 9,
-	NetworkIdentityNotifyPriority_Seventh = 10,
-	NetworkIdentityNotifyPriority_Eighth = 11,
-	NetworkIdentityNotifyPriority_MAX = 12
+	NetworkIdentityNotifyPriority_Default = 101,
+	NetworkIdentityNotifyPriority_Blackboard = 50,
+	NetworkIdentityNotifyPriority_ActorRoot = 100,
+	NetworkIdentityNotifyPriority_First = 110,
+	NetworkIdentityNotifyPriority_Second = 120,
+	NetworkIdentityNotifyPriority_Third = 130,
+	NetworkIdentityNotifyPriority_Fourth = 140,
+	NetworkIdentityNotifyPriority_Fifth = 150,
+	NetworkIdentityNotifyPriority_Sixth = 160,
+	NetworkIdentityNotifyPriority_Seventh = 170,
+	NetworkIdentityNotifyPriority_Eighth = 180,
+	NetworkIdentityNotifyPriority_MAX = 181
 };
 
 // Enum GPGameplay.ENotifyTeammatesType
@@ -3191,18 +3191,18 @@ enum class ENotifyTeammatesType : UINT8 {
 // Enum GPGameplay.EOutLineScreenEffectStencil
 enum class EOutLineScreenEffectStencil : UINT8 {
 	None = 0,
-	OutLineRed_3P = 1,
-	OutLineWhite = 2,
-	OutLineGreen = 3,
-	OutLineBlue = 4,
-	OutLineAI = 5,
-	OutLineRed_1P = 6,
-	OutLineLocking = 7,
-	OutLineLockComplete = 8,
-	OutLineGreen_SupportEffect = 9,
-	OutLineYellow_Low = 10,
-	OutLineYellow_High = 11,
-	EOutLineScreenEffectStencil_MAX = 12
+	OutLineRed_3P = 30,
+	OutLineWhite = 31,
+	OutLineGreen = 32,
+	OutLineBlue = 33,
+	OutLineAI = 34,
+	OutLineRed_1P = 35,
+	OutLineLocking = 36,
+	OutLineLockComplete = 37,
+	OutLineGreen_SupportEffect = 38,
+	OutLineYellow_Low = 40,
+	OutLineYellow_High = 41,
+	EOutLineScreenEffectStencil_MAX = 42
 };
 
 // Enum GPGameplay.EAbilityItemOutLineType
@@ -3214,26 +3214,26 @@ enum class EAbilityItemOutLineType : UINT8 {
 };
 
 // Enum GPGameplay.EOutLineEffectType
-enum class EOutLineEffectType : UINT8 {
+enum class EOutLineEffectType : int {
 	OutLineType_None = 0,
 	OutLineType_ProxSensor = 1,
 	OutLineType_ArrowMark = 2,
-	OutLineType_MedicGun = 3,
-	OutLineType_MedicGunHit = 4,
-	OutLineType_SupportEffect = 5,
-	OutLineType_DyingLockEnemy = 6,
-	OutLineType_Breakthrough_Defender = 7,
-	OutLineType_DyingShowTeammateCanRescueSelf = 8,
-	OutLineType_DyingShowCampMedicCanRescueSelf = 9,
-	OutLineType_Locking = 10,
-	OutLineType_LockComplete = 11,
-	OutLineType_LockFire = 12,
-	OutLineType_OnlyMarker = 13,
-	OutLineType_SOL_OB_Teammate = 14,
-	OutLineType_SOL_OB_Enemy = 15,
-	OutLineType_SOL_OB_AI = 16,
-	OutLineType_SOL_OB_FreeCamera = 17,
-	OutLineType_MAX = 18
+	OutLineType_MedicGun = 4,
+	OutLineType_MedicGunHit = 8,
+	OutLineType_SupportEffect = 16,
+	OutLineType_DyingLockEnemy = 32,
+	OutLineType_Breakthrough_Defender = 64,
+	OutLineType_DyingShowTeammateCanRescueSelf = 128,
+	OutLineType_DyingShowCampMedicCanRescueSelf = 256,
+	OutLineType_Locking = 512,
+	OutLineType_LockComplete = 1024,
+	OutLineType_LockFire = 2048,
+	OutLineType_OnlyMarker = 4096,
+	OutLineType_SOL_OB_Teammate = 8192,
+	OutLineType_SOL_OB_Enemy = 16384,
+	OutLineType_SOL_OB_AI = 32768,
+	OutLineType_SOL_OB_FreeCamera = 65536,
+	OutLineType_MAX = 65537
 };
 
 // Enum GPGameplay.EPlayerParachutePhaseType
@@ -3631,10 +3631,10 @@ enum class ELoadResourceType : UINT8 {
 	NONE = 0,
 	Server = 1,
 	Client1P = 2,
-	Client3P = 3,
-	Server_Client1P = 4,
-	Server_Client1P_Client3P = 5,
-	ELoadResourceType_MAX = 6
+	Client3P = 4,
+	Server_Client1P = 3,
+	Server_Client1P_Client3P = 7,
+	ELoadResourceType_MAX = 8
 };
 
 // Enum GPGameplay.EAbilitySpawnType
@@ -3642,8 +3642,8 @@ enum class EAbilitySpawnType : UINT8 {
 	NONE = 0,
 	Server = 1,
 	Client1P = 2,
-	Client3P = 3,
-	EAbilitySpawnType_MAX = 4
+	Client3P = 4,
+	EAbilitySpawnType_MAX = 5
 };
 
 // Enum GPGameplay.ESkillWeaponSwitchType
@@ -3662,12 +3662,12 @@ enum class ESkillWeaponSwitchType : UINT8 {
 
 // Enum GPGameplay.ESkillStateType
 enum class ESkillStateType : UINT8 {
-	DoubleHandsSkill = 0,
-	LeftHandSkill = 1,
-	RightHandSkill = 2,
-	LegsSkill = 3,
-	SpecialSkill = 4,
-	ESkillStateType_MAX = 5
+	DoubleHandsSkill = 1,
+	LeftHandSkill = 2,
+	RightHandSkill = 3,
+	LegsSkill = 4,
+	SpecialSkill = 5,
+	ESkillStateType_MAX = 6
 };
 
 // Enum GPGameplay.ESkillBehaviorPreFilterState
@@ -4078,10 +4078,10 @@ enum class EVehicleResetType : UINT8 {
 	NONE = 0,
 	STATUS = 1,
 	PHYSICS = 2,
-	AI = 3,
-	PASSENGERS = 4,
-	ALL = 5,
-	EVehicleResetType_MAX = 6
+	AI = 4,
+	PASSENGERS = 8,
+	ALL = 15,
+	EVehicleResetType_MAX = 16
 };
 
 // Enum GPGameplay.EAnimVehicleSeatType
@@ -4231,10 +4231,10 @@ enum class EWeaponPartAnimFunctionType : UINT8 {
 // Enum GPGameplay.EWeaponPartFunctionType
 enum class EWeaponPartFunctionType : UINT8 {
 	NONE = 0,
-	StaticAttributeModify = 1,
-	StaticAttributeReplace = 2,
-	StaticArrayAttributeModify = 3,
-	EWeaponPartFunctionType_MAX = 4
+	StaticAttributeModify = 2,
+	StaticAttributeReplace = 3,
+	StaticArrayAttributeModify = 4,
+	EWeaponPartFunctionType_MAX = 5
 };
 
 // Enum GPGameplay.EWeaponPartFunctionDynamicType
@@ -4250,11 +4250,11 @@ enum class EModularWeaponDescCompare : UINT8 {
 	None = 0,
 	Adapter = 1,
 	ExtraModel = 2,
-	Skin = 3,
-	Pendant = 4,
-	SolutionCompare = 5,
-	AllCompare = 6,
-	EModularWeaponDescCompare_MAX = 7
+	Skin = 4,
+	Pendant = 8,
+	SolutionCompare = 1,
+	AllCompare = 15,
+	EModularWeaponDescCompare_MAX = 16
 };
 
 // Enum GPGameplay.EModularPartNodeFlagState
@@ -4377,20 +4377,20 @@ enum class EAssemblerAudioType : UINT8 {
 	PistolGrip = 3,
 	Stock = 4,
 	Handguard = 5,
-	Sight = 6,
-	Magazine = 7,
-	Muzzle = 8,
-	Foregrip = 9,
-	Underbarrel = 10,
-	TacticalDevices = 11,
-	Bipod = 12,
-	ForSight = 13,
-	RearSight = 14,
-	SightBase = 15,
-	Ammo = 16,
-	Pop_Gun = 17,
-	Select_Gun = 18,
-	EAssemblerAudioType_MAX = 19
+	Sight = 11,
+	Magazine = 12,
+	Muzzle = 13,
+	Foregrip = 14,
+	Underbarrel = 15,
+	TacticalDevices = 16,
+	Bipod = 17,
+	ForSight = 18,
+	RearSight = 19,
+	SightBase = 21,
+	Ammo = 99,
+	Pop_Gun = 201,
+	Select_Gun = 202,
+	EAssemblerAudioType_MAX = 203
 };
 
 // Enum GPGameplay.EForbidLeftHandIKType
@@ -4413,8 +4413,8 @@ enum class EAimDownSightsState : UINT8 {
 enum class EPartFunctionTag : UINT8 {
 	NONE = 0,
 	SupportSideAiming = 1,
-	All = 2,
-	EPartFunctionTag_MAX = 3
+	All = 255,
+	EPartFunctionTag_MAX = 256
 };
 
 // Enum GPGameplay.EAssemblerCameraType
@@ -4468,19 +4468,19 @@ enum class EAssemblerCamPoint : UINT8 {
 	POINT_GAS_POINT = 37,
 	POINT_HAMMER_POINT = 38,
 	POINT_TRIGGER_POINT = 39,
-	POINT_HYDRASCO_POINT = 40,
-	POINT_SHIELD_POINT = 41,
-	POINT_BOLT_POINT = 42,
-	POINT_GISG2_POINT = 43,
-	POINT_PENDANT_POINT = 44,
-	POINT_GUN_SOLUTION = 45,
-	POINT_GUN_SOL_INSPECTOR = 46,
-	POINT_GUN_DISPLAY_FEATURE1 = 47,
-	POINT_GUN_SKIN_DEFAULT = 48,
-	POINT_GUN_FINETUNE = 49,
-	POINT_GUN_UPGRADE = 50,
-	NONE = 51,
-	EAssemblerCamPoint_MAX = 52
+	POINT_HYDRASCO_POINT = 50,
+	POINT_SHIELD_POINT = 51,
+	POINT_BOLT_POINT = 52,
+	POINT_GISG2_POINT = 53,
+	POINT_PENDANT_POINT = 90,
+	POINT_GUN_SOLUTION = 100,
+	POINT_GUN_SOL_INSPECTOR = 200,
+	POINT_GUN_DISPLAY_FEATURE1 = 201,
+	POINT_GUN_SKIN_DEFAULT = 202,
+	POINT_GUN_FINETUNE = 203,
+	POINT_GUN_UPGRADE = 204,
+	NONE = 205,
+	EAssemblerCamPoint_MAX = 206
 };
 
 // Enum GPGameplay.EPerkEffectAdditiveLogic
@@ -4638,24 +4638,24 @@ enum class ECrosshairType : UINT8 {
 
 // Enum GPGameplay.EWeaponAdapterType
 enum class EWeaponAdapterType : UINT8 {
-	Receiver = 0,
-	GunBarral = 1,
-	PistolGrip = 2,
-	Stock = 3,
-	Handguard = 4,
-	Sight = 5,
-	Magazine = 6,
-	Muzzle = 7,
-	Foregrip = 8,
-	Underbarrel = 9,
-	TacticalDevices = 10,
-	Bipod = 11,
-	ForSight = 12,
-	RearSight = 13,
-	SightBase = 14,
-	Special = 15,
-	Silencer = 16,
-	EWeaponAdapterType_MAX = 17
+	Receiver = 1,
+	GunBarral = 2,
+	PistolGrip = 3,
+	Stock = 4,
+	Handguard = 5,
+	Sight = 11,
+	Magazine = 12,
+	Muzzle = 13,
+	Foregrip = 14,
+	Underbarrel = 15,
+	TacticalDevices = 16,
+	Bipod = 17,
+	ForSight = 18,
+	RearSight = 19,
+	SightBase = 21,
+	Special = 20,
+	Silencer = 200,
+	EWeaponAdapterType_MAX = 201
 };
 
 // Enum GPGameplay.EBurnningPotState
@@ -4899,8 +4899,8 @@ enum class EVehicleLockType : UINT8 {
 	NONE = 0,
 	Terrestrial = 1,
 	Aerial = 2,
-	All = 3,
-	EVehicleLockType_MAX = 4
+	All = 255,
+	EVehicleLockType_MAX = 256
 };
 
 // Enum GPGameplay.EWeaponGunKickTriggerType
@@ -5176,8 +5176,8 @@ enum class EWeaponOffsetType : UINT8 {
 // Enum GPGameplay.EZoomAlignmentMode
 enum class EZoomAlignmentMode : UINT8 {
 	TransformAlignment = 0,
-	DisableAlignment = 1,
-	EZoomAlignmentMode_MAX = 2
+	DisableAlignment = 2,
+	EZoomAlignmentMode_MAX = 3
 };
 
 // Enum GPGameplay.EEquipmentPartDamageType
@@ -5270,8 +5270,8 @@ enum class EEightDirectionType : UINT8 {
 // Enum GPGameplay.EAnimationSpecialUseType
 enum class EAnimationSpecialUseType : UINT8 {
 	None = 0,
-	TPPAnim_UnderFPP = 1,
-	EAnimationSpecialUseType_MAX = 2
+	TPPAnim_UnderFPP = 6,
+	EAnimationSpecialUseType_MAX = 7
 };
 
 // Enum GPGameplay.EWeaponSpreadModifierType
@@ -5312,12 +5312,12 @@ enum class EWeaponAntiCheatType : UINT8 {
 	Ammo = 3,
 	FireSpread = 4,
 	FireRecoil = 5,
-	ChangeClip = 6,
-	Chamber = 7,
-	Equipping = 8,
-	Firing = 9,
-	OtherState = 10,
-	EWeaponAntiCheatType_MAX = 11
+	ChangeClip = 101,
+	Chamber = 102,
+	Equipping = 103,
+	Firing = 104,
+	OtherState = 200,
+	EWeaponAntiCheatType_MAX = 201
 };
 
 // Enum GPGameplay.EShakerRuntimeRecoilSimulatorStage

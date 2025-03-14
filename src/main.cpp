@@ -63,8 +63,8 @@ LONG VehExp(_EXCEPTION_POINTERS *ExceptionInfo) {
 [[clang::annotate("^icall=3")]]
 void Run() {
 	DebugCmdOpen();
-	AddVectoredExceptionHandler(0, VehExp);
-	// AnitAnitCheat::EnableByPass();
+	// AddVectoredExceptionHandler(0, VehExp);
+	AnitAnitCheat::EnableByPass();
 	auto dx12  = HookDx12Manager::GetInstance();
 	auto Cheat = CheatManager::GetInstance();
 	Cheat->Init();

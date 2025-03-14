@@ -18,7 +18,7 @@ add_compile_options(-fno-char8_t -Wmicrosoft-cast)
 add_compile_options(-fno-threadsafe-statics)
 
 #OLLVM 间接全局  间接CALL 控制流混淆
-# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mllvm -irobf-icall -mllvm -irobf-indgv")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mllvm -irobf-icall -mllvm -irobf-indgv -mllvm -irobf-indbr")
 
 set(SDK_PATH "include/SDK/")
 

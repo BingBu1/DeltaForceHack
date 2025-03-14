@@ -11,6 +11,7 @@
 
 namespace Dumper
 {
+	#define SMALL_NUMBER		(1.e-8f)
 	// --------------------------------------------------
 	// # Enums
 	// --------------------------------------------------
@@ -384,6 +385,7 @@ namespace Dumper
 		FRotator& operator /=(const float other);
 		float Size() const;
 		FRotator Clamp() const;
+		struct FVector ToVector() const;
 	};
 
 	/**
@@ -465,6 +467,7 @@ namespace Dumper
 		FVector2D(float x, float y);
 		bool IsValid();
 		float Distance(FVector2D& v) const;
+		void Normalize(float Tolerance = SMALL_NUMBER);
 		FVector2D operator +(const FVector2D& other) const;
 		FVector2D operator +(float scalar) const;
 		FVector2D operator -(float scalar) const;

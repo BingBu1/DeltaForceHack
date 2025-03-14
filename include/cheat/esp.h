@@ -33,9 +33,11 @@ class Esp : public BaseMenu {
 
 	void DrawPlayer(Dumper::AActor * Actor);
 
-	void DrwaBackPlayer(Dumper::AActor * Actor);
+	void DrawBackPlayer(Dumper::AActor * Actor);
 
 	void DrawOther(Dumper::AActor * Actor);
+
+	void WallHack(Dumper::AActor * Actor);
 
 	void ExecDraw();
 
@@ -54,6 +56,7 @@ class Esp : public BaseMenu {
 	bool Esp_DrawUnk{};
 	bool Esp_DrwaPick{};
 	bool Esp_DrwaPlayerBaack{};
+	bool Esp_WallHack{};
 	float Esp_Disance{};
 	float Esp_ImpendDisance{};
 	int Wide{}, height{};
@@ -61,6 +64,7 @@ class Esp : public BaseMenu {
 
 	std::vector<DrawItem> DrawName;
 };
+
 
 
 

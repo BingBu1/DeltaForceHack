@@ -19,6 +19,5 @@
 #define GWORLD_OFFSET 0x00000000
 
 
-#define SUPER_Offset 0x50
-
+inline auto SUPER_Offset = 0x0;
 inline uint64_t GET_BONE_MATRIX_OFFSET = 0;
